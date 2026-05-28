@@ -1,0 +1,88 @@
+// @import "./variables"; // Import biến tùy thuộc cấu trúc thư mục của bạn
+
+.header-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: rgba(255, 255, 255, 0.12); /* Nền siêu trong suốt sang trọng */
+    backdrop-filter: blur(15px); /* Hiệu ứng kính mờ (glassmorphism) */
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Viền mờ tinh tế */
+    transition: $transition-smooth;
+
+    .header-logo {
+        img {
+            max-height: 45px; // Giới hạn chiều cao logo vừa vặn
+            object-fit: contain;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-family: $font-family-sans;
+                font-size: 15px;
+                font-weight: 400;
+                color: $color-text-main;
+                padding: 0.5rem 0;
+                position: relative;
+                transition: $transition-smooth;
+
+                // Custom lại mũi tên Bootstrap mặc định nếu không muốn dùng hình có sẵn
+                &::after {
+                    display: none;
+                }
+
+                .icon-arrow {
+                    transition: $transition-smooth;
+                    opacity: 0.7;
+                }
+
+                // Hiệu ứng Hover
+                &:hover {
+                    color: $color-gold-brand;
+
+                    .icon-arrow {
+                        transform: translateY(2px); // Mũi tên nhích xuống nhẹ khi hover
+                        // color: $color-gold-brand;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            // Xử lý riêng khi trạng thái Dropdown đang mở
+            &.show {
+                .nav-link {
+                    color: $color-gold-brand;
+
+                    .icon-arrow {
+                        transform: rotate(180deg); // Xoay ngược mũi tên lên
+                    }
+                }
+            }
+        }
+    }
+
+    // Style cho Dropdown Menu đổ xuống
+    .dropdown-menu {
+        background-color: #ffffff;
+        border-radius: 4px;
+        padding: 10px 0;
+
+        .dropdown-menu-item {
+            display: block;
+            padding: 8px 20px;
+            // color: $color-text-main;
+            text-decoration: none;
+            font-size: 14px;
+            transition: $transition-smooth;
+
+            &:hover {
+                background-color: rgba($color-gold-brand, 0.08);
+                color: $color-gold-brand;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ngoc-tin",
+  "version": "1.0.0",
+  "description": "Dự án Ngọc Tín - Tự động biên dịch SCSS sang CSS",
+  "scripts": {
+    "build": "npx sass@1.69.0 dist/scss/main.scss dist/scss/main.css",
+    "watch": "npx sass@1.69.0 --watch dist/scss/main.scss dist/scss/main.css"
+  }
+}
