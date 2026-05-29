@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    //Slick Slider Activation Script
+    $('.about-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000
+    });
+
     $('.cnd-slick').slick({
         slidesToShow: 1,
         autoplay: false,
@@ -29,7 +41,7 @@ $(document).ready(function () {
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
     });
     $('.slider-nav-4')
-        .on('init', function(event, slick) {
+        .on('init', function (event, slick) {
             $('.slider-nav-4 .slick-slide.slick-current').addClass('is-active');
         })
         .slick({
@@ -38,17 +50,17 @@ $(document).ready(function () {
             dots: false,
             focusOnSelect: false,
             infinite: false,
-            prevArrow:"<img class='left' src=\"/wp-content/themes/toyota/dist/images/left.png\" alt=\"\">",
-            nextArrow:"<img class='right' src=\"/wp-content/themes/toyota/dist/images/right.png\" alt=\"\">",
+            prevArrow: "<img class='left' src=\"/wp-content/themes/toyota/dist/images/left.png\" alt=\"\">",
+            nextArrow: "<img class='right' src=\"/wp-content/themes/toyota/dist/images/right.png\" alt=\"\">",
         });
-    $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+    $('.slider-single').on('afterChange', function (event, slick, currentSlide) {
         $('.slider-nav-4').slick('slickGoTo', currentSlide);
         var currrentNavSlideElem = '.slider-nav-4 .slick-slide[data-slick-index="' + currentSlide + '"]';
         $('.slider-nav-4 .slick-slide.is-active').removeClass('is-active');
         $(currrentNavSlideElem).addClass('is-active');
     });
 
-    $('.slider-nav-4').on('click', '.slick-slide', function(event) {
+    $('.slider-nav-4').on('click', '.slick-slide', function (event) {
         event.preventDefault();
         var goToSingleSlide = $(this).data('slick-index');
 
@@ -73,8 +85,8 @@ $(document).ready(function () {
         arrows: true,
         dots: true,
         speed: 500,
-        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+        prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
     });
 
     $('.l-sv-customer').owlCarousel({
@@ -99,5 +111,37 @@ $(document).ready(function () {
     });
 
 
+    // Initialize Library Slider Section
+    $('.library-slider').slick({
+        centerMode: true,
+        centerPadding: '20%',
+        slidesToShow: 1,
+        infinite: true,
+        arrows: true,
+        dots: false,
+        prevArrow: '<button class="library-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button class="library-next"><i class="fas fa-chevron-right"></i></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    centerPadding: '15%'
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: '10%'
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
 });

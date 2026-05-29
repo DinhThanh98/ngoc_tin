@@ -1,0 +1,156 @@
+.about-section {
+  background-color: #fffdec; // elegant light warm cream background matching header and banner bottom
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    min-height: 605px;
+  }
+
+  .about-header {
+    .about-section-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #b58a3f; // brand copper gold
+      margin-bottom: 8px;
+    }
+
+    .about-title-line {
+      width: 60px;
+      height: 2px;
+      background-color: #b58a3f;
+      margin: 0 auto;
+    }
+  }
+
+  .about-card {
+    background-color: #a3603b; // beautiful copper brown color matching the image
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(163, 96, 59, 0.15);
+    z-index: 2;
+    position: relative;
+
+    .about-card-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #fffdec; // warm light cream text
+    }
+
+    .about-card-text {
+      p {
+        font-family: "Raleway-Regular", sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 20px;
+        text-align: justify;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .about-slider {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        border-radius: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      // Tùy chỉnh các chấm tròn chuyển slide (Slick Dots) chuẩn thiết kế cao cấp
+      .slick-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+
+        li {
+          margin: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 16px;
+          height: 16px;
+
+          button {
+            font-size: 0;
+            line-height: 0;
+            color: transparent;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45); // Trắng bán trong suốt
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+            &::before {
+              display: none; // Ẩn ký tự font mặc định đi để tránh lỗi hiển thị
+            }
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.8);
+            }
+          }
+
+          // Dấu chấm tròn khi đang active
+          &.slick-active {
+            button {
+              background-color: #ffffff; // Trắng sáng nổi bật
+              width: 10px; // Phóng to nhẹ hạt ngọc
+              height: 10px;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
+    }
+
+    .btn-learn-more {
+      font-family: "Raleway-Medium", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fffdec;
+      text-decoration: none;
+      padding: 12px 32px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50px;
+      background-color: transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #fffdec;
+        color: #a3603b;
+        border-color: #fffdec;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      svg {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover svg {
+        transform: translateX(4px);
+      }
+    }
+  }
+}

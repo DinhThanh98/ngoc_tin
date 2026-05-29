@@ -1,0 +1,232 @@
+.philosophy-banner .banner-bg {
+  background-image: url("../images/triet-ly-phat-trien/Hero Banner.jpg") !important;
+  background-position: center right;
+}
+.philosophy-banner .banner-tagline {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 991px) {
+  .philosophy-banner .banner-tagline {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .philosophy-banner .banner-tagline {
+    font-size: 1.6rem;
+  }
+}
+.philosophy-banner .banner-title {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 300 !important;
+  color: #ffffff !important;
+  font-size: 6.4rem !important;
+  letter-spacing: -0.02em !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+}
+@media (max-width: 991px) {
+  .philosophy-banner .banner-title {
+    font-size: 4.8rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .philosophy-banner .banner-title {
+    font-size: 3.6rem !important;
+  }
+}
+
+.philosophy-intro-section {
+  background-color: #fffdec;
+  position: relative;
+  overflow: hidden;
+}
+.philosophy-intro-section::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  top: 15%;
+  width: 250px;
+  height: 380px;
+  background-image: url("../images/logo-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(15deg);
+}
+@media (max-width: 991px) {
+  .philosophy-intro-section::before {
+    display: none;
+  }
+}
+.philosophy-intro-section::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: 10%;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/logo-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-15deg);
+}
+@media (max-width: 991px) {
+  .philosophy-intro-section::after {
+    display: none;
+  }
+}
+.philosophy-intro-section .container {
+  position: relative;
+  z-index: 1;
+}
+.philosophy-intro-section .intro-img-wrapper {
+  border-radius: 28px !important;
+  box-shadow: 0 20px 50px rgba(163, 96, 59, 0.12) !important;
+  border: 1px solid rgba(163, 96, 59, 0.1);
+  transform: perspective(1000px) rotateY(2deg);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.philosophy-intro-section .intro-img-wrapper .intro-img {
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.philosophy-intro-section .intro-img-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg) translateY(-5px);
+  box-shadow: 0 30px 60px rgba(163, 96, 59, 0.18) !important;
+}
+.philosophy-intro-section .intro-img-wrapper:hover .intro-img {
+  transform: scale(1.05);
+}
+.philosophy-intro-section .intro-content .intro-title {
+  font-family: "Fahkwang", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #a3603b;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 768px) {
+  .philosophy-intro-section .intro-content .intro-title {
+    font-size: 2.8rem;
+  }
+}
+.philosophy-intro-section .intro-content .intro-title-line {
+  width: 60px;
+  height: 2px;
+  background-color: #a3603b;
+  margin: 15px auto 0;
+  border-radius: 1px;
+}
+.philosophy-intro-section .intro-content .intro-text-wrapper {
+  margin-top: 35px;
+}
+.philosophy-intro-section .intro-content .intro-text-wrapper .intro-p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #4a4a4a;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.core-values-showcase-section {
+  background-color: #fffdec;
+  position: relative;
+  overflow: hidden;
+}
+.core-values-showcase-section::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 20%;
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/logo-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 991px) {
+  .core-values-showcase-section::before {
+    display: none;
+  }
+}
+.core-values-showcase-section .container {
+  position: relative;
+  z-index: 1;
+}
+.core-values-showcase-section .values-main-card {
+  background: linear-gradient(135deg, #a3603b, #8a5030);
+  border-radius: 32px !important;
+  box-shadow: 0 30px 60px rgba(163, 96, 59, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+.core-values-showcase-section .values-main-card::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/logo-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(-10deg);
+}
+.core-values-showcase-section .values-main-card .row {
+  position: relative;
+  z-index: 1;
+}
+.core-values-showcase-section .values-main-card .values-img-wrapper {
+  border-radius: 20px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+.core-values-showcase-section .values-main-card .values-img-wrapper .values-img {
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.core-values-showcase-section .values-main-card .values-img-wrapper:hover .values-img {
+  transform: scale(1.05);
+}
+.core-values-showcase-section .values-main-card .values-content .values-card-subtitle {
+  font-family: "Fahkwang", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #e5c184;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-left: 3px solid #e5c184;
+  padding-left: 15px;
+  line-height: 1;
+}
+.core-values-showcase-section .values-main-card .values-content .values-list .value-item {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  cursor: default;
+  display: inline-block;
+}
+.core-values-showcase-section .values-main-card .values-content .values-list .value-item:hover {
+  color: #e5c184;
+  transform: translateX(10px);
+}/*# sourceMappingURL=triet-ly.css.map */

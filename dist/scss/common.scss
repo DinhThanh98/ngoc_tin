@@ -74,6 +74,131 @@
   src: url('./../fonts/Fahkwang/Fahkwang-SemiBold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url('./../fonts/static/Manrope-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url('./../fonts/static/Manrope-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-ExtraLight";
+  src: url('./../fonts/static/Manrope-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-Light";
+  src: url('./../fonts/static/Manrope-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url('./../fonts/static/Manrope-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url('./../fonts/static/Manrope-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url('./../fonts/static/Manrope-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  src: url('./../fonts/static/Raleway-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-BlackItalic";
+  src: url('./../fonts/static/Raleway-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url('./../fonts/static/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-BoldItalic";
+  src: url('./../fonts/static/Raleway-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url('./../fonts/static/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBoldItalic";
+  src: url('./../fonts/static/Raleway-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-ExtraLight";
+  src: url('./../fonts/static/Raleway-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-ExtraLightItalic";
+  src: url('./../fonts/static/Raleway-ExtraLightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url('./../fonts/static/Raleway-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url('./../fonts/static/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-LightItalic";
+  src: url('./../fonts/static/Raleway-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url('./../fonts/static/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-MediumItalic";
+  src: url('./../fonts/static/Raleway-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url('./../fonts/static/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url('./../fonts/static/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-SemiBoldItalic";
+  src: url('./../fonts/static/Raleway-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-Thin";
+  src: url('./../fonts/static/Raleway-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway-ThinItalic";
+  src: url('./../fonts/static/Raleway-ThinItalic.ttf') format('truetype');
+}
+
 
 //
 //@font-face {
@@ -106,6 +231,8 @@ $color-text: #252e5b;
 $color-border: #e7e9ec;
 $color-icon: #fbb647;
 $color-a: #205eda;
+$color-text-red: #964426;
+$color-text-yellow: #EECD6F;
 //1rem=12.50px
 $size-12: 0.96rem;
 $size-13: 1rem;
@@ -137,20 +264,26 @@ $size-65: 5.2rem;
 $size-80: 6.4rem;
 $size-90: 7.2rem;
 $size-25: 2rem;
+
 :root {
   font-size: 12.50px;
+
   @media screen and (max-width: 1920px) {
     font-size: 12.50px;
   }
+
   @media screen and (max-width: 1024px) {
     font-size: 10px;
   }
+
   @media screen and (max-width: 800px) {
     font-size: 9px;
   }
+
   @media screen and (max-width: 480px) {
     font-size: 8.5px;
   }
+
   @media screen and (max-width: 375px) {
     font-size: 8.5px;
   }
@@ -186,6 +319,7 @@ $p48: 3.84rem;
 $p50: 4rem;
 $p55: 4.4rem;
 $p60: 5rem;
+$p64: 5.12rem;
 $p65: 5.2rem;
 $p75: 6rem;
 $p70: 5.6rem;
@@ -196,20 +330,26 @@ $p100: 8rem;
 $p110: 8.8rem;
 $p120: 9.6rem;
 $p25: 2rem;
+
 :root {
   font-size: 12.50px;
+
   @media screen and (max-width: 1920px) {
     font-size: 12.50px;
   }
+
   @media screen and (max-width: 1600px) {
     font-size: 12px;
   }
+
   @media screen and (max-width: 1440px) {
     font-size: 10.5px;
   }
+
   @media screen and (max-width: 1024px) {
     font-size: 9px;
   }
+
   @media screen and (max-width: 480px) {
     font-size: 8.5px;
   }
@@ -229,14 +369,23 @@ body {
   background-size: cover;
   line-height: 1.5;
 
-  h4, p, ul, li, h3, h5, h2, span {
+  h4,
+  p,
+  ul,
+  li,
+  h3,
+  h5,
+  h2,
+  span {
     line-height: 1.5;
     color: #000000;
   }
+
   #sidemenu li.selected {
-    a{
-      color: #7215be ;
+    a {
+      color: #7215be;
     }
+
     /* background: #aaa; */
   }
 
@@ -246,6 +395,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0 !important;
     color: rgba(0, 0, 0, 0.7);
+
     @media screen and (max-width: 580px) {
       letter-spacing: 0.3px !important;
     }
@@ -261,139 +411,142 @@ body {
 
 
 //style edit
-.the_content{
- font-family: OpenSans;
-}
-.has-drop-cap {
-  margin-bottom: 50px;
-}
-.the_content{
- h2,
- h3,
- h4 {
-  color: #000;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-
- h6 {
-  font-size: $size-16;
-}
-
- h5 {
-  font-size: $size-18;
-}
-
- h4 {
-  font-size: $size-17;
-}
-
- h3 {
-  font-size: $size-25;
-}
-
- h2 {
-  font-size: $size-27;
-  line-height: 1.5;
-}
-
- p {
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 1rem;
-  font-size: $size-16;
-}
-
- ul {
-  list-style: disc;
-  padding-left: 18px;
-  padding-bottom: 5px;
+.the_content {
   font-family: OpenSans;
 }
 
- ul li {
-  color: #000;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  font-size: 16px;
+.has-drop-cap {
+  margin-bottom: 50px;
 }
 
- ul li a {
-  color: #ff5912;
-}
+.the_content {
 
- a {
-  color: #6254e7;
-}
+  h2,
+  h3,
+  h4 {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
 
- ol {
-  list-style: decimal;
-  padding-left: 18px;
-  padding-bottom: 5px;
-}
+  h6 {
+    font-size: $size-16;
+  }
 
- ol li {
-  color: #666;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
+  h5 {
+    font-size: $size-18;
+  }
 
- ol li a {
-  color: #ff5912;
-}
+  h4 {
+    font-size: $size-17;
+  }
 
- blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  border-left: 5px solid #6254e7;
-}
+  h3 {
+    font-size: $size-25;
+  }
 
- blockquote p {
-  margin: 0 !important;
-}
+  h2 {
+    font-size: $size-27;
+    line-height: 1.5;
+  }
 
- code {
-  background: #6254e7;
-  border-radius: 3px;
-  font-size: 0.85rem;
-  color: #fff;
-  padding: 0 5px;
-  display: inline-block;
-}
+  p {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    font-size: $size-16;
+  }
 
- table > tbody > tr > td,
- table > tbody > tr > th,
- table > tfoot > tr > td,
- table > tfoot > tr > th,
- table > thead > tr > td,
- table > thead > tr > th {
-  border: 1px solid #ddd;
-  padding: 7px 10px;
-}
+  ul {
+    list-style: disc;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    font-family: OpenSans;
+  }
 
- iframe {
-  margin: auto;
-  width: 100%;
-  min-height: 315px;
-  margin-bottom: 10px;
-}
+  ul li {
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 
- img {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-  margin: 0 auto;
-  display: flex;
-  padding: $p20 0;
-}
+  ul li a {
+    color: #ff5912;
+  }
 
- .syntaxhighlighter {
-  padding: 10px 0;
-}
+  a {
+    color: #6254e7;
+  }
 
- figure figcaption {
-  text-align: center;
-}
+  ol {
+    list-style: decimal;
+    padding-left: 18px;
+    padding-bottom: 5px;
+  }
+
+  ol li {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  ol li a {
+    color: #ff5912;
+  }
+
+  blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #6254e7;
+  }
+
+  blockquote p {
+    margin: 0 !important;
+  }
+
+  code {
+    background: #6254e7;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: #fff;
+    padding: 0 5px;
+    display: inline-block;
+  }
+
+  table>tbody>tr>td,
+  table>tbody>tr>th,
+  table>tfoot>tr>td,
+  table>tfoot>tr>th,
+  table>thead>tr>td,
+  table>thead>tr>th {
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+  }
+
+  iframe {
+    margin: auto;
+    width: 100%;
+    min-height: 315px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: flex;
+    padding: $p20 0;
+  }
+
+  .syntaxhighlighter {
+    padding: 10px 0;
+  }
+
+  figure figcaption {
+    text-align: center;
+  }
 }
 
 a:hover {
@@ -401,43 +554,58 @@ a:hover {
   text-decoration: unset;
   color: #005eb8;
 
-  h4, p, ul, li, h3, h5, span, i {
+  h4,
+  p,
+  ul,
+  li,
+  h3,
+  h5,
+  span,
+  i {
     //color: #29618e !important;
   }
 }
 
-.nhung-data{
+.nhung-data {
   background: #f2f3f4;
   padding: 31px 0;
-  @media screen and (max-width:800px){
+
+  @media screen and (max-width:800px) {
     padding: 20px 0;
 
   }
-  .text{
-    ul{
-      @media screen and (max-width:800px){
+
+  .text {
+    ul {
+      @media screen and (max-width:800px) {
         flex-wrap: wrap;
         justify-content: center;
       }
-      li{
+
+      li {
         margin-right: 50px;
-            font-family: OpenSans-SemiBold;
-            font-size: $size-16;
-            color: #000;
-        @media screen and (max-width : 1440px){
+        font-family: OpenSans-SemiBold;
+        font-size: $size-16;
+        color: #000;
+
+        @media screen and (max-width : 1440px) {
           margin-right: 25px;
         }
-        @media screen and (max-width:800px){
+
+        @media screen and (max-width:800px) {
           padding-bottom: 7px;
         }
-        span{
+
+        span {
           font-family: OpenSans;
           padding-left: 15px;
-          @media screen and (max-width : 1440px){
+
+          @media screen and (max-width : 1440px) {
             padding-left: 10px;
           }
         }
-        span.green{
+
+        span.green {
           color: #15b921;
         }
       }
@@ -468,12 +636,20 @@ button {
     color: #ffff;
     border-radius: 50px;
     border: 1px solid #005eb8;
-    &:hover{
+
+    &:hover {
       transition: .5s all;
-      background:#ffffff6e!important;
-      color: #005eb8!important;
-      border: 1px solid #005eb8!important;
+      background: #ffffff6e !important;
+      color: #005eb8 !important;
+      border: 1px solid #005eb8 !important;
       font-weight: bold;
     }
+  }
+}
+
+// Giới hạn chiều rộng nội dung tối đa (max-width) của container là 1190px trên tất cả các trang ở màn hình PC
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1190px !important;
   }
 }

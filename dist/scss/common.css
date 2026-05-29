@@ -1,62 +1,162 @@
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("./../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Fahkwang-Bold";
+  src: url("./../fonts/Fahkwang/Fahkwang-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans";
-  src: url("./../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-family: "Fahkwang-Regular";
+  src: url("./../fonts/Fahkwang/Fahkwang-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans-SemiBold";
-  src: url("./../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-family: "Fahkwang-SemiBold";
+  src: url("./../fonts/Fahkwang/Fahkwang-SemiBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans-ExtraBold";
-  src: url("./../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-family: "Fahkwang-Bold";
+  src: url("./../fonts/Fahkwang/Fahkwang-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans-Italic";
-  src: url("./../fonts/OpenSans-Italic.ttf") format("truetype");
+  font-family: "Fahkwang-Italic";
+  src: url("./../fonts/Fahkwang/Fahkwang-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Myriad-pro";
-  src: url("./../fonts/MYRIADPRO-REGULAR.OTF") format("truetype");
+  font-family: "Fahkwang-Regular";
+  src: url("./../fonts/Fahkwang/Fahkwang-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "OpenSans-Light";
-  src: url("./../fonts/OpenSans-Light.ttf") format("truetype");
+  font-family: "Fahkwang-Light";
+  src: url("./../fonts/Fahkwang/Fahkwang-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("./../fonts/Roboto-Bold.ttf") format("truetype");
+  font-family: "Fahkwang-Bold";
+  src: url("./../fonts/Fahkwang/Fahkwang-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-Italic";
-  src: url("./../fonts/Raleway-Italic.ttf") format("truetype");
+  font-family: "Fahkwang-Italic";
+  src: url("./../fonts/Fahkwang/Fahkwang-Italic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-Light";
-  src: url("./../fonts/Raleway-Light.ttf") format("truetype");
+  font-family: "Fahkwang-Light";
+  src: url("./../fonts/Fahkwang/Fahkwang-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway-Regular";
-  src: url("./../fonts/Raleway-Regular.ttf") format("truetype");
+  font-family: "Fahkwang-Regular";
+  src: url("./../fonts/Fahkwang/Fahkwang-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fahkwang-Bold";
+  src: url("./../fonts/Fahkwang/Fahkwang-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fahkwang-Bold";
+  src: url("./../fonts/Fahkwang/Fahkwang-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fahkwang-Medium";
+  src: url("./../fonts/Fahkwang/Fahkwang-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fahkwang-SemiBold";
+  src: url("./../fonts/Fahkwang/Fahkwang-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("./../fonts/static/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-ExtraBold";
+  src: url("./../fonts/static/Manrope-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-ExtraLight";
+  src: url("./../fonts/static/Manrope-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("./../fonts/static/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("./../fonts/static/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("./../fonts/static/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("./../fonts/static/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Black";
+  src: url("./../fonts/static/Raleway-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-BlackItalic";
+  src: url("./../fonts/static/Raleway-BlackItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway-Bold";
-  src: url("./../fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("./../fonts/static/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-BoldItalic";
+  src: url("./../fonts/static/Raleway-BoldItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway-ExtraBold";
-  src: url("./../fonts/Raleway-ExtraBold.ttf") format("truetype");
+  src: url("./../fonts/static/Raleway-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-ExtraBoldItalic";
+  src: url("./../fonts/static/Raleway-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-ExtraLight";
+  src: url("./../fonts/static/Raleway-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-ExtraLightItalic";
+  src: url("./../fonts/static/Raleway-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url("./../fonts/static/Raleway-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("./../fonts/static/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-LightItalic";
+  src: url("./../fonts/static/Raleway-LightItalic.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway-Medium";
-  src: url("./../fonts/Raleway-Medium.ttf") format("truetype");
+  src: url("./../fonts/static/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-MediumItalic";
+  src: url("./../fonts/static/Raleway-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("./../fonts/static/Raleway-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway-SemiBold";
-  src: url("./../fonts/Raleway-SemiBold.ttf") format("truetype");
+  src: url("./../fonts/static/Raleway-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-SemiBoldItalic";
+  src: url("./../fonts/static/Raleway-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Thin";
+  src: url("./../fonts/static/Raleway-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway-ThinItalic";
+  src: url("./../fonts/static/Raleway-ThinItalic.ttf") format("truetype");
 }
 :root {
   font-size: 12.5px;
@@ -129,7 +229,14 @@ body {
   background-size: cover;
   line-height: 1.5;
 }
-body h4, body p, body ul, body li, body h3, body h5, body h2, body span {
+body h4,
+body p,
+body ul,
+body li,
+body h3,
+body h5,
+body h2,
+body span {
   line-height: 1.5;
   color: #000000;
 }
@@ -348,4 +455,10 @@ button {
   color: #005eb8 !important;
   border: 1px solid #005eb8 !important;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1190px !important;
+  }
 }/*# sourceMappingURL=common.css.map */

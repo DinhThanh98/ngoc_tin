@@ -1,0 +1,119 @@
+.footer-section {
+  background-color: #a3603b;
+  background-image: radial-gradient(circle at 15% 85%, rgba(255, 253, 236, 0.06) 0%, rgba(163, 96, 59, 0) 70%), linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
+  color: #fffdec;
+  padding: 80px 0 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-section::before {
+  content: "";
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/logo-page.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 1;
+  transform: rotate(15deg);
+}
+.footer-section .container {
+  position: relative;
+  z-index: 2;
+}
+.footer-section .footer-logo {
+  max-height: 70px;
+  width: auto;
+  filter: brightness(0) invert(1) sepia(1) saturate(100) hue-rotate(330deg) brightness(0.9);
+  transition: transform 0.3s ease;
+}
+.footer-section .footer-logo:hover {
+  transform: scale(1.02);
+}
+.footer-section .footer-company-name {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: rgba(255, 253, 236, 0.85);
+  margin-top: 15px;
+}
+.footer-section .footer-col {
+  margin-bottom: 20px;
+}
+.footer-section .footer-info .footer-info-group {
+  margin-bottom: 22px;
+}
+.footer-section .footer-info .footer-info-group:last-child {
+  margin-bottom: 0;
+}
+.footer-section .footer-info .footer-info-group .footer-info-label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fffdec;
+  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+}
+.footer-section .footer-info .footer-info-group .footer-info-value {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 253, 236, 0.8);
+  margin: 0;
+}
+.footer-section .footer-info .footer-info-group .footer-info-value a {
+  color: rgba(255, 253, 236, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-section .footer-info .footer-info-group .footer-info-value a:hover {
+  color: #fffdec;
+  text-decoration: underline;
+}
+.footer-section .footer-navigation .footer-nav-title {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fffdec;
+  margin-bottom: 20px;
+  letter-spacing: 0.08em;
+}
+.footer-section .footer-navigation .footer-nav-links li {
+  margin-bottom: 12px;
+}
+.footer-section .footer-navigation .footer-nav-links li a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 253, 236, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.footer-section .footer-navigation .footer-nav-links li a:hover {
+  color: #fffdec;
+  transform: translateX(4px);
+}
+.footer-section .footer-divider {
+  height: 1px;
+  background-color: rgba(255, 253, 236, 0.15);
+}
+.footer-section .footer-bottom {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 253, 236, 0.7);
+}
+.footer-section .footer-bottom a {
+  color: rgba(255, 253, 236, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-section .footer-bottom a:hover {
+  color: #fffdec;
+}/*# sourceMappingURL=footer.css.map */

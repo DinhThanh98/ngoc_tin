@@ -1,0 +1,259 @@
+// ==========================================
+// Trang Dự Án Tiêu Biểu (Featured Projects Page Styles)
+// ==========================================
+
+.projects-showcase-section {
+  // Nền màu nâu đồng đặc trưng của thương hiệu, sử dụng gradient tinh tế tạo chiều sâu sang trọng
+  background-color: #a3603b;
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 253, 236, 0.08) 0%, rgba(163, 96, 59, 0) 80%), 
+                    linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  z-index: 2;
+
+  @media (max-width: 991px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  // Họa tiết hoa sen chìm thương hiệu ở góc trái
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    top: 10%;
+    width: 350px;
+    height: 350px;
+    background-image: url('../images/logo-page.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(15deg);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  // Họa tiết hoa sen chìm thương hiệu ở góc phải
+  &::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    bottom: 10%;
+    width: 350px;
+    height: 350px;
+    background-image: url('../images/logo-page.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.035;
+    pointer-events: none;
+    z-index: 0;
+    transform: rotate(-15deg);
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  // Từng dòng dự án
+  .project-showcase-row {
+    margin-bottom: 6rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  // Khối thông tin chi tiết dự án
+  .project-info-block {
+    // Tiêu đề dự án màu vàng gold sang trọng
+    .project-title {
+      font-family: 'Fahkwang', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: #e5c184; // Màu vàng gold sang trọng giống thiết kế
+      line-height: 1.45;
+      letter-spacing: 0.01em;
+      text-transform: none;
+
+      @media (max-width: 991px) {
+        font-size: 2.4rem;
+      }
+
+      @media (max-width: 575px) {
+        font-size: 2rem;
+      }
+    }
+
+    // Danh sách thông số dự án
+    .project-details-list {
+      li {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9); // Màu chữ trắng mờ thanh nhã
+
+        .detail-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 18px;
+          height: 18px;
+          flex-shrink: 0;
+
+          svg {
+            stroke: #e5c184; // Màu vàng gold cho nét vẽ map-pin
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        .detail-text {
+          flex: 1;
+        }
+      }
+    }
+
+    // Nút tìm hiểu thêm thiết kế dạng pill thanh mảnh cao cấp
+    .btn-outline-premium {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      padding: 10px 28px;
+      border-radius: 50px !important;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      letter-spacing: 0.02em;
+      text-transform: none;
+
+      .btn-arrow {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        background-color: #ffffff;
+        color: #a3603b; // Đổi màu chữ sang nâu đồng khi hover
+        border-color: #ffffff;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+        .btn-arrow {
+          transform: translateX(5px); // Mũi tên dịch chuyển nhẹ sang phải tạo hiệu ứng tương tác sinh động
+        }
+      }
+    }
+  }
+
+  // Wrapper cho slider hình ảnh dự án
+  .project-slider-wrapper {
+    position: relative;
+    border-radius: 24px !important; // Góc bo tròn rộng 24px sang trọng đúng thiết kế
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.3) !important;
+      
+      .project-slide-img {
+        transform: scale(1.03); // Zoom nhẹ ảnh khi hover wrapper
+      }
+    }
+
+    // Các ảnh bên trong slide
+    .project-slide-img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      @media (max-width: 1199px) {
+        height: 340px;
+      }
+      @media (max-width: 991px) {
+        height: 380px;
+      }
+      @media (max-width: 575px) {
+        height: 260px;
+      }
+    }
+
+    // Tùy chỉnh các chấm tròn chuyển slide (Slick Dots) chuẩn thiết kế Framer
+    .slick-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      z-index: 10;
+
+      li {
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+
+        button {
+          font-size: 0;
+          line-height: 0;
+          color: transparent;
+          border: none;
+          background-color: rgba(255, 255, 255, 0.45); // Màu trắng bán trong suốt
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          padding: 0;
+          cursor: pointer;
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+          }
+        }
+
+        // Chấm tròn khi đang kích hoạt (Active Dot)
+        &.slick-active {
+          button {
+            background-color: #ffffff; // Trắng sáng hoàn toàn
+            width: 10px; // Kích thước to hơn
+            height: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

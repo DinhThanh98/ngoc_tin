@@ -26,8 +26,8 @@
         <div class="container-fluid px-md-5">
             <nav class="navbar navbar-expand-lg p-0 justify-content-between align-items-center">
             
-            <a class="navbar-brand d-flex align-items-center header-logo" href="#">
-                <img src="dist/images/logo.png" alt="Ngọc Tín Holdings" class="img-fluid">
+            <a class="navbar-brand d-flex align-items-center header-logo" href="home.php">
+                <img src="dist/images/logo-page.png" alt="Ngọc Tín Holdings" class="img-fluid">
             </a>
 
             <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,11 +37,11 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center gap-4 mt-3 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Triết lý phát triển</a>
+                    <a class="nav-link" href="triet-ly.php">Triết lý phát triển</a>
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="duAnDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="du-an.php" id="duAnDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dự án
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down icon-arrow" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -54,16 +54,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Giá trị di sản</a>
+                    <a class="nav-link" href="gia-tri-di-san.php">Giá trị di sản</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cơ hội nghề nghiệp</a>
+                    <a class="nav-link" href="co-hoi-nghe-nghiep.php">Cơ hội nghề nghiệp</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tin tức</a>
+                    <a class="nav-link" href="tin-tuc.php">Tin tức</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Liên hệ</a>
+                    <a class="nav-link" href="lien-he.php">Liên hệ</a>
                 </li>
                 </ul>
             </div>

@@ -8,19 +8,24 @@
   @media screen and (max-width: 1600px) {
     padding: 10px 20px 0px 100px;
   }
+
   @media screen and (max-width: 1440px) {
     padding: 0px 10px 0px 60px;
   }
+
   @media screen and (max-width: 1280px) {
     padding: 0px 50px 0px;
 
   }
+
   @media screen and (max-width: 1025px) {
     height: 90px;
   }
+
   @media screen and (max-width: 800px) {
     height: 70px;
   }
+
   @media screen and (max-width: 580px) {
     padding: 0px 20px 0px;
   }
@@ -48,10 +53,12 @@
     .menu-mobile-header {
       display: none !important;
     }
+
     .menu-left {
       display: flex !important;
     }
   }
+
   @media screen and (max-width: 1024px) {
     .menu-left {
       display: none !important;
@@ -71,6 +78,7 @@
 
       li {
         padding-right: 40px;
+
         @media screen and (max-width: 1600px) {
           padding-right: 30px;
         }
@@ -78,9 +86,11 @@
         &:last-child {
           padding-right: 35px;
           border-right: 2px solid #eaeaea;
+
           @media screen and (max-width: 1600px) {
             padding-right: 50px;
           }
+
           @media screen and (max-width: 1440px) {
             padding-right: 30px;
 
@@ -91,10 +101,8 @@
           font-family: OpenSans;
           font-size: $size-17;
           color: #071d49;
-          @media screen and (max-width: 1440px) {
 
-
-          }
+          @media screen and (max-width: 1440px) {}
 
 
         }
@@ -111,6 +119,7 @@
 
   .header-left {
     display: flex;
+
     @media screen and (max-width: 1440px) {
       ul li a {
         font-size: 14px;
@@ -120,6 +129,7 @@
     .text {
       p {
         font-size: 16px;
+
         @media screen and (max-width: 1366px) {
           font-size: 14px;
         }
@@ -132,6 +142,7 @@
           margin-left: 20px;
           display: flex;
           align-items: center;
+
           @media screen and (max-width: 1440px) {
             margin-left: 25px;
           }
@@ -140,6 +151,7 @@
             padding: 0 22px;
             justify-content: center;
             border-right: 2px solid #eaeaea;
+
             @media screen and (max-width: 1600px) {
               padding: 0 15px;
             }
@@ -158,9 +170,11 @@
               font-size: $size-17;
               color: #071d49;
               padding-right: 5px;
+
               @media screen and (max-width: 1366px) {
                 font-size: $size-15;
               }
+
               @media screen and (max-width: 1280px) {
                 font-size: unset;
               }
@@ -174,6 +188,7 @@
     .langs {
       position: relative;
       padding-right: 165px;
+
       @media screen and (max-width: 580px) {
         padding-right: 130px;
       }
@@ -186,6 +201,7 @@
         padding: 0px 20px;
         position: absolute;
         top: -12px;
+
         @media screen and (max-width: 1440px) {
           padding: 0 20px;
         }
@@ -197,6 +213,7 @@
             @media screen and (max-width: 1366px) {
               transform: scale(0.9);
             }
+
             @media screen and (max-width: 1280px) {
               transform: scale(0.7);
             }
@@ -206,6 +223,7 @@
             font-family: "Raleway-Bold";
             color: #20212a;
             font-size: $size-18;
+
             @media screen and (max-width: 1280px) {
               font-size: $size-18;
             }
@@ -226,6 +244,7 @@
     width: 100%;
     padding: 0 100px;
     background: #ececec;
+
     @media screen and (max-width: 1024px) {
 
       display: none;
@@ -250,12 +269,14 @@
         }
 
         &:last-child {
+
           //border-right: unset;
           .lever-2 {
             right: 84.3%;
             position: absolute;
             left: unset;
-            @media screen and (max-width : 1440px){
+
+            @media screen and (max-width : 1440px) {
               right: 100%;
             }
           }
@@ -286,6 +307,7 @@
           height: 305px;
           display: none;
           background: white;
+
           @media screen and (max-width: 1440px) {
             top: 52px;
             height: 260px;
@@ -294,7 +316,8 @@
           .images {
             height: 100%;
             width: 365px;
-            @media screen and (max-width : 1440px){
+
+            @media screen and (max-width : 1440px) {
               width: 263px;
 
             }
@@ -321,7 +344,8 @@
               &:last-child {
                 li {
                   margin-right: 60px;
-                  @media screen and (max-width : 1440px){
+
+                  @media screen and (max-width : 1440px) {
                     margin-right: 25px;
                   }
                 }
@@ -335,8 +359,9 @@
                 text-align: left;
                 padding: 11px 0;
                 border-left: unset;
-                @media screen and (max-width : 1440px){
-                width: 210px;
+
+                @media screen and (max-width : 1440px) {
+                  width: 210px;
                 }
 
                 &:hover {
@@ -357,9 +382,7 @@
               }
             }
 
-            li {
-
-            }
+            li {}
           }
         }
 
@@ -381,6 +404,7 @@
   .images-banner-home {
     width: 100%;
     height: 620px;
+
     @media screen and (max-width: 580px) {
       height: 400px !important;
     }
@@ -398,6 +422,7 @@
       position: absolute;
       top: 50%;
       transform: translate(0%, -50%);
+
       @media screen and (max-width: 1024px) {
         left: 10%;
       }
@@ -406,6 +431,7 @@
         @media screen and (max-width: 1024px) {
           width: 75%;
         }
+
         @media screen and (max-width: 580px) {
           width: 90%;
         }
@@ -423,9 +449,11 @@
           font-size: $size-45;
           font-family: "Raleway-ExtraBold";
           color: #ffffff;
+
           @media screen and (max-width: 800px) {
             font-size: $size-36;
           }
+
           @media screen and (max-width: 580px) {
             padding-right: 0%;
           }
@@ -443,6 +471,7 @@
 
       .btns1 {
         margin-top: 70px;
+
         @media screen and (max-width: 800px) {
           margin-top: 20px;
         }
@@ -461,12 +490,14 @@
   background-repeat: no-repeat;
   background-size: 50% 100%;
   min-height: 509px;
+
   @media screen and (max-width: 1440px) {
     min-height: 400px;
   }
 
   .content {
     padding: 70px 0;
+
     @media screen and (max-width: 1440px) {
       padding: 50px 0;
     }
@@ -488,9 +519,8 @@
         padding: 40px 0 30px;
         color: #122142;
         opacity: 90%;
-        @media screen and (max-width: 1440px) {
 
-        }
+        @media screen and (max-width: 1440px) {}
       }
 
       ul {
@@ -514,6 +544,7 @@
 
   .content2 {
     margin-left: 60px;
+
     @media screen and (max-width: 1440px) {
       margin-left: 50px;
     }
@@ -600,13 +631,16 @@
 .new-home {
   padding-top: 85px;
   padding-bottom: 70px;
+
   @media screen and (max-width: 1440px) {
     padding-top: 70px;
   }
+
   @media screen and (max-width: 1024px) {
     padding-top: 50px;
     padding-bottom: 40px;
   }
+
   @media screen and (min-width: 1700px) {
     .row {
       padding: 0 -25px;
@@ -692,6 +726,7 @@
       display: flex;
       align-items: center;
       margin: 15px 0;
+
       @media screen and (max-width: 580px) {
         display: block;
         padding: $p35 $p30;
@@ -702,9 +737,11 @@
         width: 305px;
         height: 195px;
         overflow: hidden;
+
         @media screen and (max-width: 1600px) {
           width: 250px;
         }
+
         @media screen and (max-width: 1440px) {
           width: 185px;
         }
@@ -724,6 +761,7 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
+
           @media screen and (max-width: 580px) {
             width: 100%;
           }
@@ -732,6 +770,7 @@
 
       .text {
         padding: 10px 8px 10px $p30;
+
         @media screen and (max-width: 580px) {
           padding: 15px 0px 10px;
 
@@ -754,12 +793,15 @@
           font-size: 14px;
           color: #122142;
           opacity: 0.8;
+
           @media screen and (max-width: 1440px) {
             padding: 10px 0;
           }
+
           @media screen and (max-width: 1024px) {
             padding: 10px 0;
           }
+
           @media screen and (max-width: 800px) {
             font-size: 13px;
           }
@@ -774,9 +816,11 @@
           font-size: $size-16;
           letter-spacing: 0;
           color: #5c5c5c;
+
           @media screen and (max-width: 1440px) {
             font-size: 14px;
           }
+
           @media screen and (max-width: 800px) {
             font-size: 13px;
           }
@@ -805,6 +849,7 @@
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
+
     @media screen and (max-width: 580px) {
       .row {
         width: 100%;
@@ -813,6 +858,7 @@
 
     .text {
       width: 670px;
+
       @media screen and (max-width: 1440px) {
         width: 650px;
       }
@@ -871,8 +917,7 @@
     .images {
       padding: 60px 0;
 
-      img {
-      }
+      img {}
     }
   }
 
@@ -913,6 +958,7 @@
     .item {
       width: 40%;
       padding-right: 15px;
+
       @media screen and (max-width: 580px) {
         width: 50%;
       }
@@ -921,6 +967,7 @@
     .items {
       width: 20%;
       padding-right: 15px;
+
       @media screen and (max-width: 580px) {
         width: 50%;
       }
@@ -952,6 +999,7 @@
 
   .info-footer {
     padding: 30px 0 20px;
+
     @media screen and (max-width: 580px) {
       padding: 10px 0 20px;
 
@@ -987,9 +1035,11 @@
         font-size: 15px;
         opacity: 40%;
         color: #122142;
+
         @media screen and (max-width: 1024px) {
           margin-top: 20px;
         }
+
         @media screen and (max-width: 580px) {
           font-size: 12px;
         }
@@ -1175,6 +1225,7 @@
     padding: 0 0 0 30px !important;
     height: 80px;
     padding: 0;
+
     @media screen and (max-width: 1024px) {
       padding: 0 30px 0 30px !important;
 
@@ -1209,6 +1260,7 @@
           &:last-child {
             padding-right: 70px;
             border-right: 2px solid #eaeaea;
+
             @media screen and (max-width: 1440px) {
               padding-right: 50px;
             }
@@ -1218,10 +1270,8 @@
             font-family: OpenSans;
             font-size: $size-17;
             color: #071d49;
-            @media screen and (max-width: 1440px) {
 
-
-            }
+            @media screen and (max-width: 1440px) {}
 
 
           }
@@ -1238,6 +1288,7 @@
 
     .header-left {
       display: flex;
+
       @media screen and (max-width: 1440px) {
         ul li a {
           font-size: 14px;
@@ -1245,9 +1296,7 @@
       }
 
       .text {
-        p {
-
-        }
+        p {}
       }
 
       .info-header {
@@ -1286,6 +1335,7 @@
       .langs {
         position: relative;
         padding-right: 165px;
+
         @media screen and (max-width: 580px) {
           padding-right: 130px;
         }
@@ -1298,6 +1348,7 @@
           padding: 0px 20px;
           position: absolute;
           top: -8px;
+
           @media screen and (max-width: 1440px) {
             padding: 0 20px;
           }
@@ -1309,6 +1360,7 @@
               @media screen and (max-width: 1366px) {
                 transform: scale(0.9);
               }
+
               @media screen and (max-width: 1280px) {
                 transform: scale(0.7);
               }
@@ -1318,6 +1370,7 @@
               font-family: "Raleway-Bold";
               color: #20212a;
               font-size: $size-18;
+
               @media screen and (max-width: 1280px) {
                 font-size: $size-18;
               }
@@ -1392,12 +1445,12 @@
             width: 100%;
           }
 
-          img {
-          }
+          img {}
         }
 
         .text {
           padding: 10px 0px 10px $p30;
+
           @media screen and (max-width: 580px) {
             padding: 15px 0px 10px;
 
@@ -1425,9 +1478,11 @@
             font-size: $size-16;
             letter-spacing: 0;
             color: #5c5c5c;
+
             @media screen and (max-width: 1440px) {
               font-size: 14px;
             }
+
             @media screen and (max-width: 800px) {
               font-size: 13px;
             }
@@ -1737,16 +1792,17 @@
         .images {
           width: 120px;
           height: unset !important;
+
           @media screen and (max-width: 580px) {
             width: 100%;
           }
 
-          img {
-          }
+          img {}
         }
 
         .text {
           padding: 10px 0px 10px $p30;
+
           @media screen and (max-width: 580px) {
             padding: 15px 0px 10px;
 
@@ -1774,9 +1830,11 @@
             font-size: $size-16;
             letter-spacing: 0;
             color: #5c5c5c;
+
             @media screen and (max-width: 1440px) {
               font-size: 14px;
             }
+
             @media screen and (max-width: 800px) {
               font-size: 13px;
             }
@@ -1809,6 +1867,7 @@
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
+
         @media screen and (max-width: 1024px) {
           left: 10%;
         }
@@ -1817,6 +1876,7 @@
           @media screen and (max-width: 1024px) {
             width: 75%;
           }
+
           @media screen and (max-width: 580px) {
             width: 90%;
           }
@@ -1834,9 +1894,11 @@
             font-size: $size-45;
             font-family: "Raleway-ExtraBold";
             color: #ffffff;
+
             @media screen and (max-width: 800px) {
               font-size: $size-36;
             }
+
             @media screen and (max-width: 580px) {
               padding-right: 0%;
             }
@@ -1854,6 +1916,7 @@
 
         .btns1 {
           margin-top: 70px;
+
           @media screen and (max-width: 800px) {
             margin-top: 20px;
           }
@@ -1945,6 +2008,7 @@
     background-color: white;
     height: 60px;
     padding: 0;
+
     @media screen and (max-width: 1024px) {
       padding: 0 30px 0 30px !important;
 
@@ -1974,6 +2038,7 @@
           &:last-child {
             padding-right: 70px;
             border-right: 2px solid #eaeaea;
+
             @media screen and (max-width: 1440px) {
               padding-right: 50px;
             }
@@ -1983,10 +2048,8 @@
             font-family: OpenSans;
             font-size: $size-17;
             color: #071d49;
-            @media screen and (max-width: 1440px) {
 
-
-            }
+            @media screen and (max-width: 1440px) {}
 
 
           }
@@ -2003,6 +2066,7 @@
 
     .header-left {
       display: flex;
+
       @media screen and (max-width: 1440px) {
         ul li a {
           font-size: 14px;
@@ -2010,9 +2074,7 @@
       }
 
       .text {
-        p {
-
-        }
+        p {}
       }
 
       .info-header {
@@ -2051,6 +2113,7 @@
       .langs {
         position: relative;
         padding-right: 165px;
+
         @media screen and (max-width: 580px) {
           padding-right: 130px;
         }
@@ -2063,6 +2126,7 @@
           padding: 0px 20px;
           position: absolute;
           top: -8px;
+
           @media screen and (max-width: 1440px) {
             padding: 0 20px;
           }
@@ -2074,6 +2138,7 @@
               @media screen and (max-width: 1366px) {
                 transform: scale(0.9);
               }
+
               @media screen and (max-width: 1280px) {
                 transform: scale(0.7);
               }
@@ -2083,6 +2148,7 @@
               font-family: "Raleway-Bold";
               color: #20212a;
               font-size: $size-18;
+
               @media screen and (max-width: 1280px) {
                 font-size: $size-18;
               }
@@ -2095,6 +2161,762 @@
           }
         }
       }
+    }
+  }
+}
+
+// ==========================================
+// Giới Thiệu (About) Section Styles
+// ==========================================
+.about-section {
+  background-color: #fffdec; // elegant light warm cream background matching header and banner bottom
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    min-height: 605px;
+  }
+
+  .about-header {
+    .about-section-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: $size-35;
+      font-weight: 500;
+      color: $color-text-red; // brand copper gold
+      margin-bottom: 8px;
+    }
+
+    .about-title-line {
+      width: 60px;
+      height: 2px;
+      background-color: $color-text-red;
+      margin: 0 auto;
+    }
+  }
+
+  .about-card {
+    background-color: #a3603b; // beautiful copper brown color matching the image
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(163, 96, 59, 0.15);
+    z-index: 2;
+    position: relative;
+
+    .about-card-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: $size-32;
+      font-weight: 500;
+      color: $color-text-yellow; // warm light cream text
+    }
+
+    .about-card-text {
+      p {
+        font-family: "Raleway-Regular", sans-serif;
+        font-size: $size-16;
+        line-height: 1.8;
+        color: $color-white;
+        margin-bottom: 20px;
+        text-align: justify;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .about-slider {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 480px;
+        object-fit: cover;
+        border-radius: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+
+      // Tùy chỉnh các chấm tròn chuyển slide (Slick Dots) chuẩn thiết kế cao cấp
+      .slick-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 10;
+
+        li {
+          margin: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 16px;
+          height: 16px;
+
+          button {
+            font-size: 0;
+            line-height: 0;
+            color: transparent;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.45); // Trắng bán trong suốt
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+            &::before {
+              display: none; // Ẩn ký tự font mặc định đi để tránh lỗi hiển thị
+            }
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.8);
+            }
+          }
+
+          // Dấu chấm tròn khi đang active
+          &.slick-active {
+            button {
+              background-color: #ffffff; // Trắng sáng nổi bật
+              width: 10px; // Phóng to nhẹ hạt ngọc
+              height: 10px;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
+    }
+
+    .btn-learn-more {
+      font-family: "Raleway-Medium", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fffdec;
+      text-decoration: none;
+      padding: 12px 32px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50px;
+      background-color: transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #fffdec;
+        color: #a3603b;
+        border-color: #fffdec;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      svg {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover svg {
+        transform: translateX(4px);
+      }
+    }
+  }
+}
+
+// ==========================================
+// Lĩnh Vực Hoạt Động (Activities) Styles
+// ==========================================
+.activities-section {
+  background-color: #fffdec;
+  position: relative;
+  overflow: hidden;
+
+  .activities-header {
+    .activities-subtitle {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #b58a3f;
+      letter-spacing: 0.15em;
+      margin-bottom: 6px;
+    }
+
+    .activities-title-line {
+      width: 50px;
+      height: 1.5px;
+      background-color: #b58a3f;
+      margin: 0 auto;
+    }
+
+    .activities-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #a3603b;
+      /* Beautiful copper brown matching Ngọc Tín logo */
+      margin-top: 15px;
+
+      @media (max-width: 768px) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .activities-desc {
+    max-width: 960px;
+
+    p {
+      font-family: "Raleway-Regular", sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+      text-align: justify;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .activities-grid {
+    margin-top: 40px;
+
+    .activity-card {
+      height: 340px;
+      position: relative;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
+
+      @media (max-width: 576px) {
+        height: 240px;
+      }
+
+      .activity-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        z-index: 1;
+      }
+
+      .activity-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 65%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0) 100%);
+        transition: all 0.4s ease;
+        z-index: 2;
+      }
+
+      .activity-card-title {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        color: #ffffff;
+        font-family: "Fahkwang-Medium", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin: 0;
+        z-index: 3;
+        transition: transform 0.4s ease, color 0.4s ease;
+
+        @media (max-width: 576px) {
+          font-size: 2rem;
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+
+        .activity-img {
+          transform: none;
+          /* No scale zoom as requested by user */
+        }
+
+        .activity-overlay {
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0) 100%);
+          /* Clean dark gradient overlay remains */
+        }
+
+        .activity-card-title {
+          color: #ffffff;
+          /* Keep white text color */
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================
+// Dự Án Tiêu Biểu (Projects) Styles
+// ==========================================
+.projects-section {
+  background-color: #fffdec;
+  position: relative;
+  overflow: hidden;
+
+  .projects-header {
+    .projects-subtitle {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #b58a3f;
+      letter-spacing: 0.15em;
+      margin-bottom: 6px;
+    }
+
+    .projects-title-line {
+      width: 50px;
+      height: 1.5px;
+      background-color: #b58a3f;
+      margin: 0 auto;
+    }
+
+    .projects-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #a3603b;
+      margin-top: 15px;
+
+      @media (max-width: 768px) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .projects-desc {
+    max-width: 960px;
+
+    p {
+      font-family: "Raleway-Regular", sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #4a4a4a;
+      text-align: justify;
+    }
+  }
+
+  .project-showcase {
+    width: 100%;
+    height: 520px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+
+    @media (max-width: 768px) {
+      height: 380px;
+    }
+
+    .project-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1;
+    }
+
+    .project-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      background: linear-gradient(to top, rgba(163, 96, 59, 0.9) 0%, rgba(163, 96, 59, 0.4) 50%, rgba(163, 96, 59, 0) 100%);
+      z-index: 2;
+    }
+
+    .project-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+
+      .project-card-title {
+        font-family: "Fahkwang-Medium", sans-serif;
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: -0.01em;
+
+        @media (max-width: 768px) {
+          font-size: 2.2rem;
+        }
+      }
+
+      .btn-learn-more {
+        font-family: "Raleway-Medium", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fffdec;
+        text-decoration: none;
+        padding: 12px 32px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50px;
+        background-color: transparent;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #fffdec;
+          color: #a3603b;
+          border-color: #fffdec;
+          transform: translateY(-2px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        svg {
+          transition: transform 0.3s ease;
+        }
+
+        &:hover svg {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
+
+// ==========================================
+// Đối Tác Chiến Lược (Partners) Styles
+// ==========================================
+.partners-section {
+  background-color: #fffdec;
+  position: relative;
+  overflow: hidden;
+
+  .partners-header {
+    .partners-subtitle {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #b58a3f;
+      letter-spacing: 0.15em;
+      margin-bottom: 6px;
+    }
+
+    .partners-title-line {
+      width: 50px;
+      height: 1.5px;
+      background-color: #b58a3f;
+      margin: 0 auto;
+    }
+
+    .partners-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #a3603b;
+      margin-top: 15px;
+
+      @media (max-width: 768px) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .partners-desc {
+    max-width: 960px;
+
+    p {
+      font-family: "Raleway-Regular", sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #4a4a4a;
+      text-align: justify;
+    }
+  }
+
+  .partners-image-container {
+    margin-top: 40px;
+
+    .partners-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+// ==========================================
+// Giá Trị Lan Tỏa (Legacy) Styles
+// ==========================================
+.legacy-section {
+  background-color: #a3603b;
+  background-image: radial-gradient(circle at 85% 85%, rgba(255, 253, 236, 0.08) 0%, rgba(163, 96, 59, 0) 70%), linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
+  color: #fffdec;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+
+  // Subtle decorative lotus watermark overlay
+  &::before {
+    content: "";
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    width: 600px;
+    height: 600px;
+    background-image: url('../images/logo-page.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 1;
+    transform: rotate(-15deg);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .legacy-header {
+    margin-bottom: 70px;
+
+    .legacy-subtitle {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fffdec;
+      letter-spacing: 0.2em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .legacy-title-line {
+      width: 70px;
+      height: 1px;
+      background-color: #fffdec;
+      margin: 15px auto;
+      opacity: 0.6;
+    }
+
+    .legacy-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #fffdec;
+      line-height: 1.5;
+      margin-top: 15px;
+
+      @media (max-width: 991px) {
+        font-size: 2.6rem;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 2.0rem;
+      }
+    }
+  }
+
+  .legacy-row {
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .legacy-content {
+    .legacy-item-title {
+      font-family: "Fahkwang-SemiBold", sans-serif;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #fffdec;
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+      position: relative;
+      padding-bottom: 10px;
+
+      @media (max-width: 991px) {
+        font-size: 1.8rem;
+        margin-top: 20px;
+      }
+    }
+
+    .legacy-item-text {
+      font-family: "Raleway-Regular", sans-serif;
+      font-size: 15px;
+      line-height: 1.9;
+      color: rgba(255, 253, 236, 0.85);
+      text-align: justify;
+      margin-bottom: 0;
+    }
+  }
+
+  .legacy-img-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 253, 236, 0.05);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .legacy-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+}
+
+// ==========================================
+// Thư Viện / Hình Ảnh / Video (Library) Styles
+// ==========================================
+.library-section {
+  background-color: #fffdec;
+  color: #a3603b;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+
+  .library-header {
+    margin-bottom: 50px;
+
+    .library-subtitle {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #b58a3f;
+      letter-spacing: 0.2em;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .library-title-line {
+      width: 70px;
+      height: 1px;
+      background-color: #b58a3f;
+      margin: 15px auto;
+      opacity: 0.6;
+    }
+
+    .library-title {
+      font-family: "Fahkwang-Medium", sans-serif;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #a3603b;
+      line-height: 1.4;
+
+      @media (max-width: 768px) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .library-slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media (max-width: 576px) {
+      padding: 0 15px;
+    }
+  }
+
+  .library-slider {
+    .library-slide-item {
+      padding: 15px;
+      outline: none;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(163, 96, 59, 0.15);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+      }
+    }
+
+    // Slider active slide effects
+    .slick-slide {
+      opacity: 0.45;
+      transform: scale(0.85);
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      outline: none !important;
+
+      @media (max-width: 480px) {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .slick-center {
+      opacity: 1;
+      transform: scale(1.02);
+      z-index: 10;
+
+      img {
+        box-shadow: 0 25px 50px rgba(163, 96, 59, 0.3);
+      }
+    }
+
+    // Prev / Next Arrows
+    .library-prev,
+    .library-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(163, 96, 59, 0.08);
+      border: none;
+      color: #a3603b;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 100;
+      transition: all 0.3s ease;
+      outline: none;
+
+      &:hover {
+        background-color: #a3603b;
+        color: #fffdec;
+        box-shadow: 0 5px 15px rgba(163, 96, 59, 0.2);
+      }
+    }
+
+    .library-prev {
+      left: 15px;
+    }
+
+    .library-next {
+      right: 15px;
     }
   }
 }

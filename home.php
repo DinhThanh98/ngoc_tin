@@ -2,343 +2,273 @@
 <html lang="en">
 
 <?php
-
 include 'header.php';
-
 ?>
-<style>
 
-</style>
-<!--banner top 1-->
-<section>
-    <div class="slick-banner-home m-0">
-        <div class="banner-top ">
-            <div class="images-banner-home">
-                <img src="dist/images/banner-home.png" alt="">
-            </div>
-            <div class="container ">
-                <div class="content ">
-                    <div class="row p-0 m-0">
-                        <div class="col-xl-7  p-0">
-                            <div class="text">
-                                <h3>Lorem ipsum dolor sit
-                                    amet, consectetur</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<?php
+include 'banner.php';
+?>
+
+<!-- Giới Thiệu Section -->
+<section class="about-section py-5">
+    <div class="container py-4">
+        <!-- Section Title -->
+        <div class="about-header text-center mb-5">
+            <h2 class="about-section-title">Giới Thiệu</h2>
+            <div class="about-title-line"></div>
         </div>
 
-    </div>
-</section>
-
-<!--"invertment_brokerage-->
-<section>
-    <div class="invertment_brokerage">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="content content1">
-                        <div class="title">
-                            <h3>Investment Banking Services</h3>
-                        </div>
-                        <div class="text">
-                            <p>
-                                Our team utilize expertise, market insights and an international network to help your
-                                corporation grow to its best potentials.
-                                Your success is our foremost priority.
-                            </p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Project Financing</li>
-                                <li><i class="fas fa-check-circle"></i>Merger and Acquisition</li>
-                                <li><i class="fas fa-check-circle"></i>Debt Capital Market</li>
-                                <li><i class="fas fa-check-circle"></i>Equity Capital Market</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="content content2">
-                        <div class="title">
-                            <h3>Brokerage Services</h3>
-                        </div>
-                        <div class="text">
-                            <p>
-                                Our team utilize expertise, market insights and an international network to help your
-                                corporation grow to its best potentials.
-                                Your success is our foremost priority.
-                            </p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Project Financing</li>
-                                <li><i class="fas fa-check-circle"></i>Merger and Acquisition</li>
-                                <li><i class="fas fa-check-circle"></i>Debt Capital Market</li>
-                                <li><i class="fas fa-check-circle"></i>Equity Capital Market</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <!-- Main Card Container -->
+        <div class="about-card p-4 p-md-5">
+            <h3 class="about-card-title mb-4">Ngọc Tín Holdings</h3>
+            
+            <div class="about-card-text mb-4">
+                <p>Trong triết lý phát triển của Ngọc Tín Holdings, nếu khát vọng phụng sự cộng đồng là cội rễ bám sâu vào tâm đất, thì Chữ Tín chính là Thân Sen – huyết mạch kiên định, là nhịp cầu dẫn truyền mọi tinh hoa và niềm tin để đóa sen sự nghiệp vươn cao, tỏa sáng.</p>
+                <p>Chúng tôi thấu hiểu rằng: Một doanh nghiệp chỉ có thể vươn xa khi sở hữu một "thân mình" chính trực. Từ những bước đi đầu tiên trong lĩnh vực đấu thầu và hợp tác chiến lược, Ngọc Tín Holdings đã chọn Chữ Tín làm nền tảng cốt lõi. Với tâm thế đó, Ngọc Tín Holdings không ngừng vươn dài "thân" mình để kết nối và lan tỏa giá trị. Bởi với chúng tôi, việc lưu giữ những điều tốt đẹp và sự biết ơn chính là cách duy nhất để nuôi dưỡng một cộng đồng nhân văn, nơi hạnh phúc được khởi nguồn từ niềm tin và nở rộ thành những giá trị trường tồn.</p>
             </div>
-        </div>
 
-    </div>
-</section>
-
-<!--banner home 2-->
-<section>
-    <div class="banner-home2">
-        <div class="images">
-            <img src="dist/images/banner-homne2s.png" alt="">
-        </div>
-        <div class="container">
-            <div class="content">
-                <h3>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod
-                </h3>
-                <div class="btn">
-                    <a href="#"> View more</a>
-                </div>
-
+            <!-- Slick Slider -->
+            <div class="about-slider mb-5">
+                <div><img src="dist/images/Homepage/Slide giới thiệu 1.jpg" alt="Slide 1" class="img-fluid rounded-4"></div>
+                <div><img src="dist/images/Homepage/Slide giới thiệu 2.jpg" alt="Slide 2" class="img-fluid rounded-4"></div>
+                <div><img src="dist/images/Homepage/Slide giới thiệu 3.png" alt="Slide 3" class="img-fluid rounded-4"></div>
+                <div><img src="dist/images/Homepage/Slide giới thiệu 4.png" alt="Slide 4" class="img-fluid rounded-4"></div>
+                <div><img src="dist/images/Homepage/Slide giới thiệu 5.jpg" alt="Slide 5" class="img-fluid rounded-4"></div>
+                <div><img src="dist/images/Homepage/Slide giới thiệu 6.jpg" alt="Slide 6" class="img-fluid rounded-4"></div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!--menu-fix small-->
-<section>
-    <div class="sidebar ">
-        <div class="item position-relative ">
-            <a class="hover_sidebar hover_sidebar1 d-flex" href="#">
-                <img src="dist/images/img-fixde1.png" alt="">
-            </a>
-            <div class="hide">
-                <a class="hover_sidebar hover_sidebar1 d-flex" href="#">
-                    <img src="dist/images/img-fiexd1ss.png" alt="">
-                    <p><a href="#">Open an account</a> </p>
+            <!-- Outlined Button -->
+            <div class="text-start">
+                <a href="#" class="btn-learn-more d-inline-flex align-items-center">
+                    Tìm hiểu thêm
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
                 </a>
-
-            </div>
-        </div>
-        <div class="item position-relative ">
-            <a class="hover_sidebar2 hover_sidebar" href="#">
-                <img src="dist/images/img-fiexd2s.png" alt="">
-            </a>
-            <div class="hide">
-                <img src="dist/images/img-fiexd2ss.png" alt="">
-                <p><a href="#">map</a></p>
-            </div>
-        </div>
-        <div class="item position-relative">
-            <a class="hover_sidebar3 hover_sidebar" href="#">
-                <img src="dist/images/img-fiexd3.png" alt="">
-            </a>
-            <div class="hide">
-                <img src="dist/images/img-fiexd3ss.png" alt="">
-                <p><a href="#">messeger</a></p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!--new home-->
-<section>
-    <div class="new-home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="title">
-                        Market News
-                    </h5>
-                    <div class="img-big">
-
-                        <div class="bg"></div>
-                        <img src="dist/images/new-home.jpg" alt="">
-                        <div class="text">
-                            <a href="#"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h5></a>
-                            <p><i class="far fa-calendar-alt"></i> 20/10/2020</p>
-                        </div>
-                    </div>
-                    <div class="list-stories">
-                        <div class="item">
-                            <a href="">
-                                <div class="images img-new-small">
-                                    <img src="dist/images/new-small.png" alt="">
-                                </div>
-                            </a>
-
-                            <div class="text">
-                                <a href="">
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                </a>
-                                <p class="time">
-                                    <i class="fal fa-calendar"></i> 09.12.2020
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consect adipisicing elit, sed do ...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="images img-new-small">
-                                    <img src="dist/images/new-small.png" alt="">
-                                </div>
-                            </a>
-
-                            <div class="text">
-                                <a href="">
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                </a>
-                                <p class="time">
-                                    <i class="fal fa-calendar"></i> 09.12.2020
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consect adipisicing elit, sed do ...
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="title">
-                        Economic news
-                    </h5>
-                    <div class="img-big">
-                        <div class="bg"></div>
-                        <img src="dist/images/new-small2.png" alt="">
-                        <div class="text">
-                            <a href="#"><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h5></a>
-                            <p><i class="far fa-calendar-alt"></i> 20/10/2020</p>
-                        </div>
-                    </div>
-                    <div class="list-stories">
-
-                        <div class="item">
-                            <a href="">
-                                <div class="images img-new-small">
-                                    <img src="dist/images/new-small.png" alt="">
-                                </div>
-                            </a>
-
-                            <div class="text">
-                                <a href="">
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                </a>
-                                <p class="time">
-                                    <i class="fal fa-calendar"></i> 09.12.2020
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consect adipisicing elit, sed do ...
-                                </p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="images img-new-small">
-                                    <img src="dist/images/new-small.png" alt="">
-                                </div>
-                            </a>
-
-                            <div class="text">
-                                <a href="">
-                                    <h5>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing </h5>
-                                </a>
-                                <p class="time">
-                                    <i class="fal fa-calendar"></i> 09.12.2020
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consect adipisicing elit, sed do ...
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </section>
 
-
-<!--banner bottom-->
-<section>
-    <div class="banner-bottom-home">
-        <div class="img-banner-bh">
-            <img src="dist/images/banner-bottompng.png" alt="">
+<!-- Lĩnh Vực Hoạt Động Section -->
+<section class="activities-section py-5">
+    <div class="container py-4">
+        <!-- Section Header -->
+        <div class="activities-header text-center mb-5">
+            <h5 class="activities-subtitle">LĨNH VỰC HOẠT ĐỘNG</h5>
+            <div class="activities-title-line mb-3"></div>
+            <h2 class="activities-title">Tấm lá xanh bao bọc giá trị sống</h2>
         </div>
-        <div class="container">
-            <div class="content">
-                <div class="row ">
-                    <div class="col-xl-6 ">
-                        <div class="text">
-                            <h3>About Us</h3>
-                            <p> JB Securities Vietnam Co., Ltd (JBSV) is a member of JB Financial Group, one of the
-                                leading retail finance groups in South Korea. JBSV provides a wide range of
-                                comprehensive Retail Brokerage and Investment Banking services for Individual,
-                                Institutional and Corporate clients. We aim to provide excellent customer services,
-                                thereby becoming the advisor of choice for clients wishing to invest in Vietnam
-                                financial market.</p>
-                            <ul>
-                                <li><a href="#"> CEO’s Message </a></li>
-                                <li>
-                                    <a href="#"> Company Overview</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Mission and Visio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Core Values </a>
-                                </li>
-                                <li>
-                                    <a href="#"> Organizational Chart</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Careers</a>
-                                </li>
-                            </ul>
-                        </div>
 
-                    </div>
-                    <div class="col-xl-6"></div>
+        <!-- Description Paragraphs -->
+        <div class="activities-desc mx-auto mb-5">
+            <p>Sự tin cậy của khách hàng chính là nguồn nhựa sống dồi dào để Ngọc Tín Holdings không ngừng mở rộng "tán lá" dịch vụ, che chở và kiến tạo nên những giá trị sống đích thực. Chúng tôi định vị sự phát triển đa dạng từ hoạt động Đấu thầu, Hợp tác đầu tư đến Trực tiếp triển khai các dự án bất động sản phân khúc cao cấp.</p>
+            <p>Tại Ngọc Tín Holdings, mỗi lĩnh vực hoạt động đều là một lời cam kết khắc sâu: Từ những viên gạch vững chãi, chúng tôi chăm chút bằng sự tỉ mỉ và cái Tâm trong từng chi tiết kiến trúc, đảm bảo chất lượng thi công đạt tiêu chuẩn cao nhất – đến những thương phố sinh động, chúng tôi biến các dãy nhà liền kề, Shophouse thành những cộng đồng cư dân sầm uất, nơi chất lượng cuộc sống được cải thiện và nâng tầm mỗi ngày.</p>
+            <p>Lấy chữ Tín làm kim chỉ nam xuyên suốt – vừa là gốc rễ sức mạnh, vừa là mục tiêu tối thượng – Ngọc Tín Holdings nỗ lực vươn mình để xây dựng một Hệ sinh thái chăm sóc toàn diện. Chúng tôi khao khát mang đến sự bảo trợ bền vững cho cộng đồng thông qua việc mở rộng sang các lĩnh vực Y tế, Giáo dục, Chăm sóc sức khỏe và Đời sống tinh thần. Đó là sự thấu hiểu sâu sắc và chăm chút đến từng đối tượng: từ nụ cười của trẻ thơ, sự năng động của thanh niên, đến phút giây an dưỡng tự tại của người tuổi già. Mỗi sản phẩm của Ngọc Tín không chỉ có "diện mạo" đẳng cấp mà còn mang "chiều sâu" nhân văn, để lại dấu ấn bền vững như ánh trăng soi sáng, góp phần thúc đẩy một xã hội tốt đẹp, an yên và vĩnh cửu.</p>
+        </div>
 
+        <!-- Activities Grid -->
+        <div class="row g-4 activities-grid">
+            <!-- Vận hành -->
+            <div class="col-12 col-md-6">
+                <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
+                    <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Vận%20hành.jpg" alt="Vận hành" class="activity-img">
+                    <div class="activity-overlay"></div>
+                    <h3 class="activity-card-title">Vận hành</h3>
+                </a>
+            </div>
+
+            <!-- Phát triển dự án -->
+            <div class="col-12 col-md-6">
+                <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
+                    <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Phát%20triển%20dự%20án.jpg" alt="Phát triển dự án" class="activity-img">
+                    <div class="activity-overlay"></div>
+                    <h3 class="activity-card-title">Phát triển dự án</h3>
+                </a>
+            </div>
+
+            <!-- Hợp tác đầu tư -->
+            <div class="col-12 col-md-6">
+                <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
+                    <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Hợp%20tác%20đầu%20tư.jpg" alt="Hợp tác đầu tư" class="activity-img">
+                    <div class="activity-overlay"></div>
+                    <h3 class="activity-card-title">Hợp tác đầu tư</h3>
+                </a>
+            </div>
+
+            <!-- Đấu thầu -->
+            <div class="col-12 col-md-6">
+                <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
+                    <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Đấu%20thầu.jpg" alt="Đấu thầu" class="activity-img">
+                    <div class="activity-overlay"></div>
+                    <h3 class="activity-card-title">Đấu thầu</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Dự Án Tiêu Biểu Section -->
+<section class="projects-section py-5">
+    <div class="container py-4">
+        <!-- Section Header -->
+        <div class="projects-header text-center mb-5">
+            <h5 class="projects-subtitle">DỰ ÁN TIÊU BIỂU</h5>
+            <div class="projects-title-line mb-3"></div>
+            <h2 class="projects-title">Những đường gân kết nối niềm tin</h2>
+        </div>
+
+        <!-- Description Paragraph -->
+        <div class="projects-desc mx-auto mb-5">
+            <p>Mỗi công trình mang dấu ấn Ngọc Tín Holdings là một "đường gân" vững chãi, dẫn truyền nhựa sống từ khát vọng đến hiện thực. Chúng tôi định vị sự phát triển đa dạng từ hoạt động Đấu thầu, Hợp tác đầu tư đến Trực tiếp triển khai các dự án bất động sản phân khúc cao cấp. Chữ Tín làm gốc - hiện diện trong từng bản vẽ kỹ thuật, từng tiến độ thi công và cam kết pháp lý minh bạch. Chữ Tâm soi sáng - như viên ngọc trong trẻo và chân thành, chúng tôi dồn tâm huyết vào từng không gian sống, từ những khu nhà ở cao cấp riêng tư đến những thương phố sinh động. Tại Ngọc Tín Holdings, mỗi bước chân chúng tôi đi qua đều để lại những "đường gân" kết nối cộng đồng, kiến tạo nên những di sản hạnh phúc và thịnh vượng bền lâu.</p>
+        </div>
+
+        <!-- Main Showcase Project Card -->
+        <div class="project-showcase position-relative overflow-hidden rounded-4 mb-5">
+            <img src="dist/images/Homepage/Dự%20án%20-%20NAMMON.jpg" alt="NAMMON Square" class="project-img">
+            <div class="project-overlay"></div>
+            
+            <div class="project-content p-4 p-md-5">
+                <h3 class="project-card-title mb-4">NAMMON Square - NƠI KHỞI SẮC GIAO THƯƠNG</h3>
+                <div class="text-start">
+                    <a href="#" class="btn-learn-more d-inline-flex align-items-center">
+                        Tìm hiểu thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Main Showcase Project Card -->
+        <div class="project-showcase position-relative overflow-hidden rounded-4">
+            <img src="dist/images/Homepage/Dự%20án%20-%20NAMMON.jpg" alt="NAMMON Square" class="project-img">
+            <div class="project-overlay"></div>
+            
+            <div class="project-content p-4 p-md-5">
+                <h3 class="project-card-title mb-4">NAMMON Square - NƠI KHỞI SẮC GIAO THƯƠNG</h3>
+                <div class="text-start">
+                    <a href="#" class="btn-learn-more d-inline-flex align-items-center">
+                        Tìm hiểu thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Đối Tác Chiến Lược Section -->
+<section class="partners-section py-5">
+    <div class="container py-4">
+        <!-- Section Header -->
+        <div class="partners-header text-center mb-5">
+            <h5 class="partners-subtitle">ĐỐI TÁC CHIẾN LƯỢC</h5>
+            <div class="partners-title-line mb-3"></div>
+            <h2 class="partners-title">SỰ CỘNG HƯỞNG CỦA NHỮNG TÂM HỒN ĐỒNG ĐIỆU</h2>
+        </div>
+
+        <!-- Description Paragraph -->
+        <div class="partners-desc mx-auto mb-5">
+            <p>Lá sen chỉ có thể vươn cao khi có sự giao thoa, cộng hưởng cùng nắng gió và nguồn mạch đất trời. Tại Ngọc Tín Holdings, chúng tôi coi trọng mỗi đối tác là một người bạn đồng hành tri kỷ trên hành trình lan tỏa giá trị sống. Mối quan hệ này được xây dựng từ Lòng Biết ơn sâu sắc khi chúng tôi thấu hiểu rằng, nếu thiếu đi chữ Tín và sự tin tưởng từ các đối tác, sẽ không có Ngọc Tín Holdings của ngày hôm nay. Đi cùng với sự Cẩn trọng tuyệt đối, chữ Tín là sợi dây liên kết vô hình nhưng bền chặt, dẫn dắt chúng tôi phối hợp chặt chẽ với các đơn vị thiết kế và nhà thầu uy tín. Sự kỹ lưỡng trong từng quy trình triển khai chính là cách chúng tôi bảo vệ cam kết về chất lượng và danh dự của cả hai bên.</p>
+        </div>
+
+        <!-- Partners Image -->
+        <div class="partners-image-container text-center">
+            <img src="dist/images/Homepage/partner.png" alt="Đối tác chiến lược" class="img-fluid partners-img">
+        </div>
+    </div>
+</section>
+
+<!-- Giá Trị Lan Tỏa Section -->
+<section class="legacy-section py-5">
+    <div class="container py-4">
+        <!-- Section Header -->
+        <div class="legacy-header text-center mb-5">
+            <h5 class="legacy-subtitle">GIÁ TRỊ LAN TỎA</h5>
+            <div class="legacy-title-line mb-3"></div>
+            <h2 class="legacy-title">
+                Để đóa sen Di sản mãi ngát hương truyền đời, và <br>
+                tâm thế Phụng sự dệt nên hạnh phúc nhân gian
+            </h2>
+        </div>
+
+        <!-- Content Rows -->
+        <!-- Row 1: Text Left, Image Right -->
+        <div class="row align-items-center mb-5 legacy-row">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <div class="legacy-content pe-lg-4">
+                    <h3 class="legacy-item-title mb-3">DI SẢN BỀN VỮNG: GIÁ TRỊ THỰC – NIỀM TIN VĨNH CỬU</h3>
+                    <p class="legacy-item-text">
+                        Tại Ngọc Tín Holdings, mỗi không gian sống không chỉ là một công trình, mà là một "di sản sống". Chúng tôi không xây dựng những hào nhoáng xa vời, mà tập trung lưu giữ những chuẩn mực đạo đức và chất lượng vững chãi cho thế hệ mai sau. Chúng tôi ghi dấu ấn bằng sự tử tế và giá trị thực qua chất lượng hữu hình: Không dừng lại ở lời nói, chất lượng tại Ngọc Tín là thứ khách hàng có thể kiểm chứng trực tiếp. Và khi chất lượng được kiểm chứng bằng sự thật, mỗi ngôi nhà sẽ trở thành một tài sản bền vững, nơi dòng chảy thịnh vượng và niềm tin sắt đá được tiếp nối vẹn nguyên qua nhiều thế hệ. Bằng cái Tâm chính trực và chữ Tín xuyên suốt, chúng tôi tận tâm xây đắp những nền tảng vững chắc nhất, để mỗi chủ nhân của Ngọc Tín Holdings luôn tự hào về sự lựa chọn đúng đắn của mình hôm nay và mãi về sau.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="legacy-img-wrapper">
+                    <img src="dist/images/Homepage/Giá%20trị%20lan%20tỏa%201.jpg" alt="Di sản bền vững" class="img-fluid legacy-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: Image Left, Text Right -->
+        <div class="row align-items-center legacy-row">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="legacy-img-wrapper">
+                    <img src="dist/images/Homepage/Giá%20trị%20lan%20tỏa%202.jpg" alt="Hạnh phúc cộng đồng" class="img-fluid legacy-img">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="legacy-content ps-lg-4">
+                    <h3 class="legacy-item-title mb-3">HẠNH PHÚC CỘNG ĐỒNG: ĐÓA SEN TỬ TẾ – NGÁT HƯƠNG PHỤNG SỰ</h3>
+                    <p class="legacy-item-text">
+                        Đóa sen mang tên Ngọc Tín Holdings chỉ thực sự rực rỡ khi hương thơm của sự Tử tế và Chân thành chạm đến trái tim của cộng đồng. Chúng tôi tin rằng, hạnh phúc thật sự là khi giá trị của doanh nghiệp hòa quyện cùng sự phát triển của xã hội. Kiên định với triết lý "Tin Từ Tâm Ngọc", Ngọc Tín Holdings cam kết mỗi dự án đi qua đều để lại những giá trị tích cực, góp phần thúc đẩy kinh tế và dựng xây một cộng đồng nhân văn, tử tế hơn mỗi ngày.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<div class="nhung-data">
-    <div class="container">
-        <div class="text">
-            <ul class="d-flex align-items-center">
-                <li>
-                    Last update: <span> Nov 23, 2020</span>
-                </li>
-                <li>
-                    VNINDEX: <span class="green">994.19 +4.19 (+0.42%) </span>
-                </li>
-                <li>
-                    Volume:    <span>489,689,829</span>
-                </li>
-                <li>
-                    Matching value (Billion VND): <span>10,534.00 </span>
-                </li>
-            </ul>
+<!-- Thư Viện / Hình Ảnh / Video Section -->
+<section class="library-section py-5">
+    <div class="container-fluid py-4 px-0">
+        <!-- Section Header -->
+        <div class="library-header text-center mb-5">
+            <h5 class="library-subtitle">THƯ VIỆN</h5>
+            <div class="library-title-line mb-3"></div>
+            <h2 class="library-title">Những khoảnh khắc kiến tạo di sản</h2>
         </div>
 
+        <!-- Slick Slider container -->
+        <div class="library-slider-container position-relative">
+            <div class="library-slider">
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/Pho%20TM.jpg" alt="Thư viện ảnh 1" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/Tien%20ich2.jpg" alt="Thư viện ảnh 2" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/Tien%20ich3.jpg" alt="Thư viện ảnh 3" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/View1_.jpg" alt="Thư viện ảnh 4" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/View3.jpg" alt="Thư viện ảnh 5" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="library-slide-item">
+                    <img src="dist/images/Homepage/Thư%20viện%20ảnh%20cuối%20trang/View3_.jpg" alt="Thư viện ảnh 6" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
 <?php
 include 'footer.php';

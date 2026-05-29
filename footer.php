@@ -1,102 +1,63 @@
 <!--footer-->
-<section>
-    <div class="footer">
-        <div class="container">
-            <div class="logo-footer">
-                <div class="images">
-                    <img src="dist/images/logo-footer.png" alt="">
-                </div>
-
-            </div>
-            <div class="content">
-                <div class="item">
-                    <div class="title">
-                        <h3>JB Securities Vietnam Co., Ltd.</h3>
-                    </div>
-                    <div class="text">
-                        <h5>
-                            “  We connect capital, ideas and people together, better serving client' financial needs with
-                            integrity"
-                        </h5>
-                        <p>Website establishment license number 33 / GP-TTĐT issued by the Ministry of Information and Communications on 06/08/2008</p>
-                    </div>
-
-                </div>
-                <div class="items">
-                    <div class="title">
-                        <h3>Our Services</h3>
-                    </div>
-                    <ul>
-                        <li><a href="#">Message from CEO </a></li>
-                        <li><a href="#">Company Overview</a></li>
-                        <li><a href="#">Mission and Vision</a></li>
-                        <li><a href="#">Core Valuesn</a></li>
-                        <li><a href="#">Organizational Chart</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="items">
-                    <div class="title">
-                        <h3>
-                            Our Services
-                        </h3>
-
-                    </div>
-                    <ul>
-                        <li><a href="#">Brokerage Services</a></li>
-                        <li><a href="#">Investment Banking</a></li>
-
-                    </ul>
-                </div>
-                <div class="items">
-                    <div class="title">
-                        <h3>
-                            News
-                        </h3>
-                    </div>
-                    <ul>
-                        <li><a href="#">Brokerage Services</a></li>
-                        <li><a href="#">Investment Banking</a></li>
-
-                    </ul>
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4 justify-content-between">
+            <!-- Brand Column -->
+            <div class="col-12 col-lg-4 footer-col">
+                <div class="footer-brand text-center text-lg-start">
+                    <img src="dist/images/logo-page.png" alt="Ngọc Tín Holdings" class="footer-logo mb-3 img-fluid">
+                    <h6 class="footer-company-name">CÔNG TY CỔ PHẦN NGỌC TÍN HOLDINGS</h6>
                 </div>
             </div>
-            <div class="info-footer">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 col-6">
-                        <div class="text texts">
-                            <a href="#"><h5><i class="fas fa-map-marker-alt"></i> Visit us</h5></a>
-                            <a href="#"><p>Level 23, East Tower, Lotte Center, 54 Lieu Giai,
-                                    Ba Dinh, Hanoi </p></a>
-                        </div>
+
+            <!-- Contact Information Column -->
+            <div class="col-12 col-md-6 col-lg-4 footer-col">
+                <div class="footer-info">
+                    <div class="footer-info-group">
+                        <span class="footer-info-label">Địa chỉ</span>
+                        <p class="footer-info-value">Tầng M, Tháp A, toà nhà Golden Palace Mễ Trì, phường Mễ Trì, quận Nam Từ Liêm, Thành phố Hà Nội, Việt Nam</p>
                     </div>
-                    <div class="col-xl-2  col-md-4 col-6">
-                        <div class="text">
-                            <a href="#"> <h5><i class="fas fa-envelope"></i> Visit us</h5></a>
-                            <a href="#"> <p>Info@jbsv.com.vn </p></a>
-
-                        </div>
+                    <div class="footer-info-group">
+                        <span class="footer-info-label">Điện thoại</span>
+                        <p class="footer-info-value"><a href="tel:+842471001868">(+84) 24 7100 1868</a></p>
                     </div>
-                    <div class="col-xl-2 col-md-4 col-6">
-                        <div class="text">
-                            <a href="#"><h5><i class="fas fa-phone-alt"></i> Visit us</h5></a>
-
-                            <a href="#"><p>(84-4) 3 942 9775 </p></a>
-                        </div>
+                    <div class="footer-info-group">
+                        <span class="footer-info-label">Email</span>
+                        <p class="footer-info-value"><a href="mailto:info@ngoctin.com.vn">info@ngoctin.com.vn</a></p>
                     </div>
-                    <div class="col-xl-4 col-md-12 col-6">
-                        <div class="text">
-                            <a href="#"> <p class="khac">Copyright @ 2020 JB Securities VietNam All rightsreserved</p></a>
+                </div>
+            </div>
 
-                        </div>
-                    </div>
-
-
+            <!-- Navigation Column -->
+            <div class="col-12 col-md-6 col-lg-3 footer-col">
+                <div class="footer-navigation">
+                    <h5 class="footer-nav-title">ĐIỀU HƯỚNG</h5>
+                    <ul class="footer-nav-links list-unstyled">
+                        <li><a href="#">Triết lý phát triển</a></li>
+                        <li><a href="#">Dự án</a></li>
+                        <li><a href="#">Giá trị di sản</a></li>
+                        <li><a href="#">Cơ hội nghề nghiệp</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+        <!-- Separator -->
+        <div class="footer-divider my-4"></div>
+
+        <!-- Bottom Row -->
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="footer-copyright text-center text-md-start">
+                <p class="mb-0">© 2026 Ngoc Tin Holdings All rights reserved</p>
+            </div>
+            <div class="footer-legal d-flex gap-4">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy policy</a>
+            </div>
+        </div>
     </div>
-</section>
+</footer>
 </body>
 <script src='dist/js/jquery-3.5.0.js'></script>
 <!-- jQuery library -->
@@ -110,7 +71,7 @@
 <script src="dist/js/slick.min.js"></script>
 <script src="dist/js/wow.min.js"></script>
 <script src="dist/js/main-chinh.js"></script>
-<!--<script src="dist/js/jq.js"></script>-->
+<script src="dist/js/js.js"></script>
 <!--<script src="dist/js/happy.js"></script>-->
 <!-- chuyển màu icon headr-->
 
