@@ -5,8 +5,8 @@
 .projects-showcase-section {
   // Nền màu nâu đồng đặc trưng của thương hiệu, sử dụng gradient tinh tế tạo chiều sâu sang trọng
   background-color: #a3603b;
-  background-image: radial-gradient(circle at 50% 50%, rgba(255, 253, 236, 0.08) 0%, rgba(163, 96, 59, 0) 80%), 
-                    linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 253, 236, 0.08) 0%, rgba(163, 96, 59, 0) 80%),
+    linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
   position: relative;
   overflow: hidden;
   padding: 100px 0;
@@ -18,6 +18,10 @@
 
   @media (max-width: 768px) {
     padding: 50px 0;
+  }
+
+  .slick-slider {
+    margin-bottom: 0px;
   }
 
   // Họa tiết hoa sen chìm thương hiệu ở góc trái
@@ -78,16 +82,21 @@
     @media (max-width: 991px) {
       margin-bottom: 4rem;
     }
+
+    @media (min-width: 992px) {
+      align-items: stretch !important; // stretch columns to match height on desktop!
+    }
   }
 
   // Khối thông tin chi tiết dự án
   .project-info-block {
+
     // Tiêu đề dự án màu vàng gold sang trọng
     .project-title {
-      font-family: 'Fahkwang', sans-serif;
-      font-size: 2.8rem;
-      font-weight: 500;
-      color: #e5c184; // Màu vàng gold sang trọng giống thiết kế
+      font-family: 'Fahkwang-Regular', sans-serif; // font chữ fahkwang regular
+      font-size: $size-30; // size 30
+      font-weight: 400;
+      color: $color-text-yellow; // color lấy trong common.scss
       line-height: 1.45;
       letter-spacing: 0.01em;
       text-transform: none;
@@ -104,11 +113,12 @@
     // Danh sách thông số dự án
     .project-details-list {
       li {
-        font-family: 'Inter', sans-serif;
-        font-size: 15px;
-        font-weight: 300;
+        font-family: 'Manrope-Regular', sans-serif; // font Manrope regular
+        font-size: $size-16; // font size -16
+        font-weight: 400;
         line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9); // Màu chữ trắng mờ thanh nhã
+        color: #ffffff; // sửa màu chữ thành white
+        gap: 5px !important; // khoảng cách với text là 5px
 
         .detail-icon {
           display: inline-flex;
@@ -119,7 +129,7 @@
           flex-shrink: 0;
 
           svg {
-            stroke: #e5c184; // Màu vàng gold cho nét vẽ map-pin
+            stroke: #ffffff !important; // sửa icon sang màu trắng
             width: 16px;
             height: 16px;
           }
@@ -150,6 +160,7 @@
 
       .btn-arrow {
         transition: transform 0.3s ease;
+        margin-left: 5px !important; // Khoảng cách với text là 5px
       }
 
       &:hover {
@@ -175,31 +186,62 @@
     background-color: rgba(255, 255, 255, 0.03);
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+    @media (min-width: 992px) {
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column;
+
+      .slick-project-slider {
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+
+        .slick-list,
+        .slick-track {
+          height: 100% !important;
+        }
+
+        .slick-slide {
+          height: 100% !important;
+
+          &>div {
+            height: 100% !important;
+            display: flex !important;
+            flex-direction: column;
+
+            &>div {
+              height: 100% !important;
+              flex: 1 1 auto !important;
+              display: flex !important;
+            }
+          }
+        }
+      }
+    }
+
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 25px 55px rgba(0, 0, 0, 0.3) !important;
-      
+
       .project-slide-img {
         transform: scale(1.03); // Zoom nhẹ ảnh khi hover wrapper
       }
     }
 
-    // Các ảnh bên trong slide
+    // Các ảnh bên trong slide (phải full height với div chứa nó)
     .project-slide-img {
       width: 100%;
-      height: 380px;
+      height: 100% !important;
       object-fit: cover;
       display: block;
       transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-      @media (max-width: 1199px) {
-        height: 340px;
-      }
       @media (max-width: 991px) {
-        height: 380px;
+        height: 380px !important;
       }
+
       @media (max-width: 575px) {
-        height: 260px;
+        height: 260px !important;
       }
     }
 

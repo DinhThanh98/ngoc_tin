@@ -50,11 +50,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                            <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Hệ sinh thái Tiện ích "Vì con người"</span>
                                     </div>
@@ -63,11 +59,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                              <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Trách nhiệm với Môi trường & Đô thị</span>
                                     </div>
@@ -76,11 +68,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                            <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Di sản Thịnh vượng</span>
                                     </div>
@@ -132,11 +120,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                                                                       <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Hệ sinh thái Tiện ích "Vì con người"</span>
                                     </div>
@@ -145,11 +129,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                            <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Trách nhiệm với Môi trường & Đô thị</span>
                                     </div>
@@ -158,11 +138,7 @@ include 'header.php';
                                 <div class="col-12 col-sm-6">
                                     <div class="value-tag-box p-3 d-flex align-items-center">
                                         <div class="tag-icon-wrapper me-3 d-flex align-items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a3603b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lotus-icon">
-                                                <path d="M12 21C12 21 8 15 8 10C8 5.5 12 3 12 3C12 3 16 5.5 16 10C16 15 12 21 12 21Z"/>
-                                                <path d="M12 21C10.5 19 6 15 6 11.5C6 8 8.5 6.5 8.5 6.5C8.5 6.5 9.5 8.5 9.5 11.5"/>
-                                                <path d="M12 21C13.5 19 18 15 18 11.5C18 8 15.5 6.5 15.5 6.5C15.5 6.5 14.5 8.5 14.5 11.5"/>
-                                            </svg>
+                                            <img src="dist/images/icon-hoa-sen.jpg">
                                         </div>
                                         <span class="tag-text">Di sản Thịnh vượng</span>
                                     </div>

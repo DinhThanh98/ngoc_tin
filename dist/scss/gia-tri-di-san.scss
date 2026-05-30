@@ -72,25 +72,25 @@
     margin-bottom: 5rem;
 
     .slogan-text {
-      font-family: 'Fahkwang', sans-serif;
-      font-size: 2.4rem;
+      font-family: 'Fahkwang-Regular', sans-serif;
+      font-size: $size-35; // slogan size 35
       font-weight: 500;
-      color: #a3603b; // Tông màu đồng copper chủ đạo
+      color: $color-text-red; // color lấy trong common
       line-height: 1.6;
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
       text-align: center;
       letter-spacing: 0.01em;
 
       @media (max-width: 768px) {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
       }
     }
 
     .slogan-divider {
       width: 80px;
       height: 2px;
-      background-color: #a3603b;
+      background-color: $color-text-red; // color lấy trong common
       margin: 20px auto 0;
       border-radius: 1px;
     }
@@ -100,10 +100,10 @@
   .heritage-content-grid {
     .heritage-left-content {
       .heritage-title {
-        font-family: 'Fahkwang', sans-serif;
-        font-size: 2.8rem;
+        font-family: 'Fahkwang-Regular', sans-serif;
+        font-size: $size-30; // section title size-30
         font-weight: 500;
-        color: #a3603b; // Nâu đồng copper
+        color: $color-text-red; // color lấy trong common
         letter-spacing: 0.02em;
         line-height: 1.4;
 
@@ -114,11 +114,11 @@
 
       .heritage-desc-wrapper {
         .heritage-desc {
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
+          font-family: 'Manrope-Regular', sans-serif; // font chữ là Manrope regular
+          font-size: $size-16; // size-16
           line-height: 1.85;
-          color: #4a4a4a;
-          font-weight: 300;
+          color: #000000; // color black
+          font-weight: 400;
           text-align: justify;
         }
       }
@@ -126,43 +126,65 @@
       // Khối danh sách các tiện ích giá trị
       .heritage-values-section {
         .values-section-title {
-          font-family: 'Fahkwang', sans-serif;
+          font-family: 'Fahkwang-Regular', sans-serif;
           font-size: 2rem;
           font-weight: 500;
-          color: #a3603b;
+          color: $color-text-red;
           letter-spacing: 0.01em;
+        }
+
+        .values-tags-grid {
+          .row {
+            margin-left: -7.5px !important;
+            margin-right: -7.5px !important;
+            row-gap: 15px !important; // Trên dưới cách nhau 15px
+
+            &>[class*="col-"] {
+              padding-left: 7.5px !important; // Trái phải cách nhau 15px (7.5px * 2)
+              padding-right: 7.5px !important;
+            }
+          }
         }
 
         // Hộp thẻ giá trị (Value Tag Box)
         .value-tag-box {
-          background-color: #ffffff;
+          background-color: #fffdec; // trùng màu nền trang web (#fffdec)
           border: 1px solid rgba(163, 96, 59, 0.12);
-          border-radius: 14px !important;
+          border-radius: 20px !important; // Góc bo tròn rộng 20px đẹp hơn đúng thiết kế
           box-shadow: 0 8px 24px rgba(163, 96, 59, 0.04);
           transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
           cursor: default;
           height: 100%;
+          padding: 24px 30px !important; // Tăng padding rộng rãi thoáng đãng chuẩn thiết kế
 
           .tag-icon-wrapper {
+            margin-right: 10px !important; // Khoảng cách với text là 5px!
+
+            img {
+              width: 32px;
+              height: 32px; // Fix lỗi méo ảnh (không bị bóp méo 15px nữa)
+              object-fit: contain;
+            }
+
             .lotus-icon path {
               transition: stroke 0.4s ease;
             }
           }
 
           .tag-text {
-            font-family: 'Inter', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            color: #1a1a1a;
-            line-height: 1.4;
+            font-family: 'Manrope-Regular', sans-serif; // Phông chữ từ common
+            font-size: $size-16; // Cỡ chữ size-16 từ common
+            font-weight: 600; // Semi-bold nổi bật
+            color: #000000; // Chữ màu đen mặc định chuẩn thiết kế
+            line-height: 1.45;
             transition: color 0.4s ease;
           }
 
           // Hiệu ứng hover cao cấp: đổi màu nền sang đồng, chuyển chữ và icon sang trắng
           &:hover {
             transform: translateY(-3px);
-            background-color: #a3603b;
-            border-color: #a3603b;
+            background-color: $color-text-red;
+            border-color: $color-text-red;
             box-shadow: 0 12px 30px rgba(163, 96, 59, 0.18);
 
             .tag-icon-wrapper {
@@ -181,16 +203,26 @@
 
     // Khung hình ảnh đứng bên phải
     .heritage-img-wrapper {
+      height: 686px; // ảnh chiều cao là 686px
       border-radius: 24px !important;
       overflow: hidden;
       box-shadow: 0 20px 50px rgba(163, 96, 59, 0.12) !important;
       border: 1px solid rgba(163, 96, 59, 0.1);
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+      @media (max-width: 991px) {
+        height: 450px;
+      }
+
+      @media (max-width: 575px) {
+        height: 300px;
+      }
+
       .heritage-img {
         transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
         object-fit: cover;
         width: 100%;
+        height: 100%;
         display: block;
       }
 

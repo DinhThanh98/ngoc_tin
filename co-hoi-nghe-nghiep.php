@@ -44,16 +44,16 @@ include 'header.php';
                         </p>
                         <ul class="culture-list ps-3">
                             <li class="culture-item mb-3">
-                                <strong>Nền nếp và Chân thành:</strong> Chúng tôi xây dựng môi trường làm việc có trước có sau, nơi sự tôn trọng và lòng biết ơn là sợi dây gắn kết. Từ những nhân sự nhỏ nhất đến các cấp quản lý, tất cả đều ứng xử bằng sự khiêm nhường và tử tế.
+                                Nền nếp và Chân thành: Chúng tôi xây dựng môi trường làm việc có trước có sau, nơi sự tôn trọng và lòng biết ơn là sợi dây gắn kết. Từ những nhân sự nhỏ nhất đến các cấp quản lý, tất cả đều ứng xử bằng sự khiêm nhường và tử tế.
                             </li>
                             <li class="culture-item mb-3">
-                                <strong>Chữ Tín là danh dự:</strong> Mỗi cá nhân tại Ngọc Tín đều thấu hiểu rằng giữ lời hứa với khách hàng và đồng nghiệp chính là giữ gìn uy tín của chính mình. Chúng tôi thực hiện "nói thật, làm thật" trong từng tác vụ nhỏ nhất mỗi ngày.
+                                Chữ Tín là danh dự: Mỗi cá nhân tại Ngọc Tín đều thấu hiểu rằng giữ lời hứa với khách hàng và đồng nghiệp chính là giữ gìn uy tín của chính mình. Chúng tôi thực hiện "nói thật, làm thật" trong từng tác vụ nhỏ nhất mỗi ngày.
                             </li>
                             <li class="culture-item mb-3">
-                                <strong>Cái Tâm trong từng công việc:</strong> Chúng tôi tỉ mỉ, cẩn trọng và trách nhiệm với mọi sản phẩm mình tạo ra. Sự chăm chút này không chỉ dành cho khách hàng mà còn dành cho chính những người cộng sự đang kề vai sát cánh.
+                                Cái Tâm trong từng công việc: Chúng tôi tỉ mỉ, cẩn trọng và trách nhiệm với mọi sản phẩm mình tạo ra. Sự chăm chút này không chỉ dành cho khách hàng mà còn dành cho chính những người cộng sự đang kề vai sát cánh.
                             </li>
                             <li class="culture-item">
-                                <strong>Môi trường rèn luyện bản lĩnh:</strong> Tại đây, bạn không chỉ được phát triển chuyên môn mà còn được bồi đắp về nhân cách và đạo đức nghề nghiệp – những giá trị bền vững giúp bạn tự hào trên hành trình sự nghiệp.
+                                Môi trường rèn luyện bản lĩnh: Tại đây, bạn không chỉ được phát triển chuyên môn mà còn được bồi đắp về nhân cách và đạo đức nghề nghiệp – những giá trị bền vững giúp bạn tự hào trên hành trình sự nghiệp.
                             </li>
                         </ul>
                     </div>

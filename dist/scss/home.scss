@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
   z-index: 9;
   top: 0;
@@ -128,10 +130,10 @@
 
     .text {
       p {
-        font-size: 16px;
+        font-size: $size-16;
 
         @media screen and (max-width: 1366px) {
-          font-size: 14px;
+          font-size: $size-16;
         }
       }
     }
@@ -462,7 +464,7 @@
         p {
           padding-top: 20px;
           line-height: 1.6;
-          font-size: $size-19;
+          font-size: $size-16;
           font-family: "Raleway-SemiBold";
           color: #ffffff;
           opacity: 1;
@@ -515,7 +517,7 @@
 
       p {
         font-family: OpenSans;
-        font-size: $size-18;
+        font-size: $size-16;
         padding: 40px 0 30px;
         color: #122142;
         opacity: 90%;
@@ -701,7 +703,7 @@
 
       p {
         padding-top: 20px;
-        font-size: 14px;
+        font-size: $size-16;
 
         i {
           color: #ffff;
@@ -790,7 +792,7 @@
         p.time {
           padding: 20px 0;
           font-family: OpenSans;
-          font-size: 14px;
+          font-size: $size-16;
           color: #122142;
           opacity: 0.8;
 
@@ -803,7 +805,7 @@
           }
 
           @media screen and (max-width: 800px) {
-            font-size: 13px;
+            font-size: $size-16;
           }
 
           i {
@@ -818,11 +820,11 @@
           color: #5c5c5c;
 
           @media screen and (max-width: 1440px) {
-            font-size: 14px;
+            font-size: $size-16;
           }
 
           @media screen and (max-width: 800px) {
-            font-size: 13px;
+            font-size: $size-16;
           }
         }
       }
@@ -872,7 +874,7 @@
       p {
         padding: 30px 0 40px;
         font-family: OpenSans;
-        font-size: $size-18;
+        font-size: $size-16;
         color: #ffff;
       }
 
@@ -948,7 +950,7 @@
 
       p {
         font-family: OpenSans;
-        font-size: 14px;
+        font-size: $size-16;
         color: #122142;
         opacity: 0.8;
       }
@@ -1032,7 +1034,7 @@
       p.khac {
         padding-top: unset;
         font-family: OpenSans;
-        font-size: 15px;
+        font-size: $size-16;
         opacity: 40%;
         color: #122142;
 
@@ -1041,7 +1043,7 @@
         }
 
         @media screen and (max-width: 580px) {
-          font-size: 12px;
+          font-size: $size-16;
         }
       }
     }
@@ -1114,7 +1116,7 @@
 
       p {
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $size-16;
         opacity: 1 !important;
         color: #000;
         font-family: OpenSans-Bold;
@@ -1411,7 +1413,7 @@
 
         p {
           padding-top: 10px;
-          font-size: 14px;
+          font-size: $size-16;
 
           i {
             color: #ffff;
@@ -1465,7 +1467,7 @@
 
           p.time {
             padding: 9px 0 5px;
-            font-size: 13px;
+            font-size: $size-16;
 
 
             i {
@@ -1480,11 +1482,11 @@
             color: #5c5c5c;
 
             @media screen and (max-width: 1440px) {
-              font-size: 14px;
+              font-size: $size-16;
             }
 
             @media screen and (max-width: 800px) {
-              font-size: 13px;
+              font-size: $size-16;
             }
           }
         }
@@ -1515,7 +1517,7 @@
         p {
           padding: 15px 0;
           font-family: OpenSans;
-          font-size: $size-18;
+          font-size: $size-16;
           color: #ffff;
         }
 
@@ -1763,7 +1765,7 @@
 
         p {
           padding-top: 10px;
-          font-size: 14px;
+          font-size: $size-16;
 
           i {
             color: #ffff;
@@ -1817,7 +1819,7 @@
 
           p.time {
             padding: 9px 0 5px;
-            font-size: 13px;
+            font-size: $size-16;
 
 
             i {
@@ -1832,11 +1834,11 @@
             color: #5c5c5c;
 
             @media screen and (max-width: 1440px) {
-              font-size: 14px;
+              font-size: $size-16;
             }
 
             @media screen and (max-width: 800px) {
-              font-size: 13px;
+              font-size: $size-16;
             }
           }
         }
@@ -1907,7 +1909,7 @@
           p {
             padding-top: 20px;
             line-height: 1.6;
-            font-size: $size-19;
+            font-size: $size-16;
             font-family: "Raleway-SemiBold";
             color: #ffffff;
             opacity: 1;
@@ -2169,9 +2171,13 @@
 // Giới Thiệu (About) Section Styles
 // ==========================================
 .about-section {
-  background-color: #fffdec; // elegant light warm cream background matching header and banner bottom
+  background-image: url(../images/canh-sen-bg.png); // elegant light warm cream background matching header and banner bottom
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  padding: $p40 0;
 
   @media (min-width: 992px) {
     min-height: 605px;
@@ -2195,9 +2201,13 @@
   }
 
   .about-card {
-    background-color: #a3603b; // beautiful copper brown color matching the image
+    padding: $p40 $p30 $p24;
+    background: url(../images/hoa-sen-color-solid.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     border-radius: 28px;
-    box-shadow: 0 20px 40px rgba(163, 96, 59, 0.15);
+    // box-shadow: 0 20px 40px rgba(163, 96, 59, 0.15);
     z-index: 2;
     position: relative;
 
@@ -2230,7 +2240,7 @@
       img {
         width: 100%;
         height: auto;
-        max-height: 480px;
+        max-height: 605px;
         object-fit: cover;
         border-radius: 16px;
         border: 2px solid rgba(255, 255, 255, 0.1);
@@ -2329,35 +2339,39 @@
 // Lĩnh Vực Hoạt Động (Activities) Styles
 // ==========================================
 .activities-section {
-  background-color: #fffdec;
+  // background-image: url(../images/la-sen-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 
   .activities-header {
+    margin-bottom: $p20;
+
     .activities-subtitle {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 14px;
+      font-size: $size-16;
       font-weight: 500;
-      color: #b58a3f;
+      color: $color-black;
       letter-spacing: 0.15em;
-      margin-bottom: 6px;
+      // margin-bottom: 6px;
     }
 
-    .activities-title-line {
-      width: 50px;
-      height: 1.5px;
-      background-color: #b58a3f;
-      margin: 0 auto;
-    }
+    // .activities-title-line {
+    //   width: 50px;
+    //   height: 1.5px;
+    //   background-color: #b58a3f;
+    //   margin: 0 auto;
+    // }
 
     .activities-title {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 3.2rem;
+      font-size: $size-35;
       font-weight: 500;
-      color: #a3603b;
-      /* Beautiful copper brown matching Ngọc Tín logo */
-      margin-top: 15px;
+      color: $color-text-red;
 
+      /* Beautiful copper brown matching Ngọc Tín logo */
       @media (max-width: 768px) {
         font-size: 2.6rem;
       }
@@ -2365,11 +2379,11 @@
   }
 
   .activities-desc {
-    max-width: 960px;
+    // max-width: 960px;
 
     p {
       font-family: "Raleway-Regular", sans-serif;
-      font-size: 15px;
+      font-size: $size-16;
       line-height: 1.8;
       color: #4a4a4a;
       margin-bottom: 20px;
@@ -2385,14 +2399,22 @@
     margin-top: 40px;
 
     .activity-card {
-      height: 340px;
+      height: 266px;
       position: relative;
       text-decoration: none;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.4s ease;
+      border: 2px solid rgba(255, 253, 236, 0.85);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(163, 96, 59, 0.08);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+      @media (max-width: 768px) {
+        height: 180px;
+      }
 
       @media (max-width: 576px) {
-        height: 240px;
+        height: 160px;
+        border-radius: 12px;
       }
 
       .activity-img {
@@ -2402,7 +2424,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.4s ease;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 1;
       }
 
@@ -2411,49 +2433,47 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 65%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0) 100%);
+        height: 60%;
+        background: linear-gradient(to top, rgba(83, 28, 10, 0.85) 0%, rgba(163, 96, 59, 0.35) 50%, rgba(163, 96, 59, 0) 100%);
         transition: all 0.4s ease;
         z-index: 2;
       }
 
       .activity-card-title {
         position: absolute;
-        bottom: 30px;
-        left: 30px;
+        bottom: 24px;
+        left: 24px;
         color: #ffffff;
         font-family: "Fahkwang-Medium", sans-serif;
-        font-size: 2.4rem;
+        font-size: $size-20;
         font-weight: 500;
+        letter-spacing: -0.01em;
         margin: 0;
         z-index: 3;
-        transition: transform 0.4s ease, color 0.4s ease;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
 
         @media (max-width: 576px) {
-          font-size: 2rem;
-          left: 20px;
-          bottom: 20px;
+          font-size: 1.8rem;
+          left: 16px;
+          bottom: 16px;
         }
       }
 
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        transform: translateY(-6px);
+        border-color: #ffffff;
+        box-shadow: 0 16px 36px rgba(83, 28, 10, 0.16);
 
         .activity-img {
-          transform: none;
-          /* No scale zoom as requested by user */
+          transform: scale(1.03);
         }
 
         .activity-overlay {
-          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0) 100%);
-          /* Clean dark gradient overlay remains */
+          background: linear-gradient(to top, rgba(83, 28, 10, 0.9) 0%, rgba(163, 96, 59, 0.4) 50%, rgba(163, 96, 59, 0) 100%);
         }
 
         .activity-card-title {
           color: #ffffff;
-          /* Keep white text color */
-          transform: none;
         }
       }
     }
@@ -2464,16 +2484,21 @@
 // Dự Án Tiêu Biểu (Projects) Styles
 // ==========================================
 .projects-section {
+  // background-image: url('../images/la-sen-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #fffdec;
   position: relative;
   overflow: hidden;
+  margin: $p100 $p20 $p50;
 
   .projects-header {
     .projects-subtitle {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 14px;
+      font-size: $size-16;
       font-weight: 500;
-      color: #b58a3f;
+      color: $color-black;
       letter-spacing: 0.15em;
       margin-bottom: 6px;
     }
@@ -2487,10 +2512,10 @@
 
     .projects-title {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 3.2rem;
+      font-size: $size-35;
       font-weight: 500;
-      color: #a3603b;
-      margin-top: 15px;
+      color: $color-text-red;
+      // margin-top: 15px;
 
       @media (max-width: 768px) {
         font-size: 2.6rem;
@@ -2499,23 +2524,26 @@
   }
 
   .projects-desc {
-    max-width: 960px;
+    padding: 0 $p20; // max-width: 960px;
 
     p {
       font-family: "Raleway-Regular", sans-serif;
-      font-size: 15px;
+      font-size: $size-16;
       line-height: 1.8;
-      color: #4a4a4a;
+      color: $color-black;
       text-align: justify;
     }
   }
 
   .project-showcase {
     width: 100%;
-    height: 520px;
+    height: 600px;
     position: relative;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
     transition: all 0.4s ease;
+    border-radius: 15px;
+    padding: 0 $p20; // max-width: 960px;
+
 
     @media (max-width: 768px) {
       height: 380px;
@@ -2538,7 +2566,7 @@
       left: 0;
       width: 100%;
       height: 60%;
-      background: linear-gradient(to top, rgba(163, 96, 59, 0.9) 0%, rgba(163, 96, 59, 0.4) 50%, rgba(163, 96, 59, 0) 100%);
+      background: linear-gradient(to top, rgba(83, 28, 10, 0.95) 0%, rgba(163, 96, 59, 0.45) 50%, rgba(163, 96, 59, 0) 100%);
       z-index: 2;
     }
 
@@ -2604,59 +2632,87 @@
   .partners-header {
     .partners-subtitle {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 14px;
+      font-size: $size-16;
       font-weight: 500;
-      color: #b58a3f;
+      color: $color-black;
       letter-spacing: 0.15em;
       margin-bottom: 6px;
     }
 
-    .partners-title-line {
-      width: 50px;
-      height: 1.5px;
-      background-color: #b58a3f;
-      margin: 0 auto;
-    }
+    // .partners-title-line {
+    //   width: 50px;
+    //   height: 1.5px;
+    //   background-color: #b58a3f;
+    //   margin: 0 auto;
+    // }
 
     .partners-title {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 3.2rem;
+      font-size: $size-35;
       font-weight: 500;
-      color: #a3603b;
+      color: $color-text-red;
       margin-top: 15px;
 
       @media (max-width: 768px) {
-        font-size: 2.6rem;
+        font-size: $size-26;
       }
     }
   }
 
   .partners-desc {
-    max-width: 960px;
+    // max-width: 960px;
 
     p {
       font-family: "Raleway-Regular", sans-serif;
-      font-size: 15px;
+      font-size: $size-16;
       line-height: 1.8;
       color: #4a4a4a;
       text-align: justify;
     }
   }
 
-  .partners-image-container {
+  .partners-grid {
     margin-top: 40px;
+  }
 
-    .partners-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.4s ease;
+  .partner-card {
+    height: 120px;
+    background-image: url('../images/bg-color.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(163, 96, 59, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
 
-      &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    @media (max-width: 768px) {
+      height: 100px;
+    }
+
+    @media (max-width: 576px) {
+      height: 90px;
+      border-radius: 12px;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      background-color: #924d27; // elegant darker warm copper
+      box-shadow: 0 16px 36px rgba(83, 28, 10, 0.16);
+
+      .partner-logo {
+        transform: scale(1.05);
       }
+    }
+
+    .partner-logo {
+      max-width: 65%;
+      max-height: 65%;
+      object-fit: contain;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
   }
 }
@@ -2665,7 +2721,7 @@
 // Giá Trị Lan Tỏa (Legacy) Styles
 // ==========================================
 .legacy-section {
-  background-color: #a3603b;
+  background-image: url('../images/hoa-sen-color.jpg');
   background-image: radial-gradient(circle at 85% 85%, rgba(255, 253, 236, 0.08) 0%, rgba(163, 96, 59, 0) 70%), linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
   color: #fffdec;
   position: relative;
@@ -2709,21 +2765,20 @@
       opacity: 0.9;
     }
 
-    .legacy-title-line {
-      width: 70px;
-      height: 1px;
-      background-color: #fffdec;
-      margin: 15px auto;
-      opacity: 0.6;
-    }
+    // .legacy-title-line {
+    //   width: 70px;
+    //   height: 1px;
+    //   background-color: #fffdec;
+    //   margin: 15px auto;
+    //   opacity: 0.6;
+    // }
 
     .legacy-title {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 3.2rem;
+      font-size: $size-35;
       font-weight: 500;
-      color: #fffdec;
+      color: $color-text-yellow;
       line-height: 1.5;
-      margin-top: 15px;
 
       @media (max-width: 991px) {
         font-size: 2.6rem;
@@ -2736,19 +2791,31 @@
   }
 
   .legacy-row {
-    margin-bottom: 80px;
+    margin: 0 0 96px 0;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+      >div:nth-child(1) {
+        padding-right: 50px !important;
+        padding-left: 15px !important;
+      }
+
+      >div:nth-child(2) {
+        padding-left: 50px !important;
+        padding-right: 15px !important;
+      }
     }
   }
 
   .legacy-content {
     .legacy-item-title {
       font-family: "Fahkwang-SemiBold", sans-serif;
-      font-size: 2.2rem;
+      font-size: $size-30;
       font-weight: 600;
-      color: #fffdec;
+      color: $color-text-yellow;
       line-height: 1.4;
       letter-spacing: 0.03em;
       position: relative;
@@ -2761,10 +2828,10 @@
     }
 
     .legacy-item-text {
-      font-family: "Raleway-Regular", sans-serif;
-      font-size: 15px;
+      font-family: "Manrope-Regular", sans-serif;
+      font-size: $size-16;
       line-height: 1.9;
-      color: rgba(255, 253, 236, 0.85);
+      color: #ffff;
       text-align: justify;
       margin-bottom: 0;
     }
@@ -2772,6 +2839,7 @@
 
   .legacy-img-wrapper {
     position: relative;
+    height: 377px;
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -2785,7 +2853,7 @@
 
     .legacy-img {
       width: 100%;
-      height: auto;
+      height: 100%;
       display: block;
       transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
@@ -2796,8 +2864,8 @@
 // Thư Viện / Hình Ảnh / Video (Library) Styles
 // ==========================================
 .library-section {
-  background-color: #fffdec;
-  color: #a3603b;
+  background-color: #FAF4E8;
+  color: #6B3C2A;
   position: relative;
   overflow: hidden;
   padding: 80px 0;
@@ -2807,94 +2875,142 @@
 
     .library-subtitle {
       font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 14px;
+      font-size: $size-16;
       font-weight: 500;
-      color: #b58a3f;
-      letter-spacing: 0.2em;
-      margin-bottom: 12px;
+      color: $color-black;
+      letter-spacing: 0.1em;
+      // margin-bottom: 12px;
       text-transform: uppercase;
     }
 
     .library-title-line {
-      width: 70px;
-      height: 1px;
-      background-color: #b58a3f;
-      margin: 15px auto;
-      opacity: 0.6;
+      width: 140px;
+      height: 2px;
+      background-color: #6B3C2A;
+      margin: 15px auto 0;
+      opacity: 0.8;
     }
 
     .library-title {
-      font-family: "Fahkwang-Medium", sans-serif;
-      font-size: 3.2rem;
-      font-weight: 500;
-      color: #a3603b;
+      font-family: "Raleway-SemiBold", sans-serif;
+      font-size: $size-35;
+      font-weight: 600;
+      color: $color-text-red;
       line-height: 1.4;
 
       @media (max-width: 768px) {
-        font-size: 2.6rem;
+        font-size: $size-26;
       }
     }
   }
 
   .library-slider-container {
-    max-width: 100%;
+    max-width: 50%;
     margin: 0 auto;
-    padding: 0 40px;
-
-    @media (max-width: 576px) {
-      padding: 0 15px;
-    }
+    padding: 0;
   }
 
   .library-slider {
+    overflow: visible;
+
     .library-slide-item {
-      padding: 15px;
+      padding: 0;
+      margin: 0 -70px;
       outline: none;
+      position: relative;
+      transition: z-index 0.6s;
+
+      @media (max-width: 1600px) {
+        margin: 0 -60px;
+      }
+
+      @media (max-width: 1440px) {
+        margin: 0 -45px;
+      }
+
+      @media (max-width: 1200px) {
+        margin: 0 -30px;
+      }
+
+      @media (max-width: 992px) {
+        margin: 0 -15px;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0;
+      }
 
       img {
         width: 100%;
-        height: auto;
-        border-radius: 24px;
-        box-shadow: 0 15px 35px rgba(163, 96, 59, 0.15);
-        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 35px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s ease;
+
+        @media (max-width: 1440px) {
+          height: 450px;
+        }
+
+        @media (max-width: 1200px) {
+          height: 400px;
+        }
+
+        @media (max-width: 992px) {
+          height: 350px;
+        }
+
+        @media (max-width: 768px) {
+          height: 280px;
+          border-radius: 20px;
+        }
+
+        @media (max-width: 480px) {
+          height: 220px;
+          border-radius: 15px;
+        }
       }
     }
 
-    // Slider active slide effects
+    // Slider active slide 3D effects
     .slick-slide {
-      opacity: 0.45;
-      transform: scale(0.85);
-      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      opacity: 0.55;
+      transform: scale(0.8);
+      filter: blur(2px);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       outline: none !important;
+      z-index: 1;
 
-      @media (max-width: 480px) {
+      @media (max-width: 768px) {
         opacity: 1;
         transform: scale(1);
+        filter: none;
       }
     }
 
     .slick-center {
       opacity: 1;
-      transform: scale(1.02);
-      z-index: 10;
+      transform: scale(1);
+      filter: blur(0);
+      z-index: 10 !important;
 
       img {
-        box-shadow: 0 25px 50px rgba(163, 96, 59, 0.3);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
       }
     }
 
-    // Prev / Next Arrows
+    // Custom Prev / Next Arrows positioned exactly like design
     .library-prev,
     .library-next {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      background-color: rgba(163, 96, 59, 0.08);
-      border: none;
-      color: #a3603b;
+      background-color: #FAF4E8;
+      border: 1px solid rgba(107, 60, 42, 0.15);
+      color: #6B3C2A;
       font-size: 14px;
       display: flex;
       align-items: center;
@@ -2903,20 +3019,60 @@
       z-index: 100;
       transition: all 0.3s ease;
       outline: none;
+      box-shadow: 0 4px 12px rgba(107, 60, 42, 0.08);
 
       &:hover {
-        background-color: #a3603b;
-        color: #fffdec;
-        box-shadow: 0 5px 15px rgba(163, 96, 59, 0.2);
+        background-color: #6B3C2A;
+        color: #FAF4E8;
+        box-shadow: 0 8px 20px rgba(107, 60, 42, 0.25);
+        border-color: #6B3C2A;
       }
     }
 
     .library-prev {
-      left: 15px;
+      left: -20%;
+
+      @media (max-width: 1440px) {
+        left: 15%;
+      }
+
+      @media (max-width: 1200px) {
+        left: 10%;
+      }
+
+      @media (max-width: 992px) {
+        left: 5%;
+      }
+
+      @media (max-width: 768px) {
+        left: 2%;
+      }
     }
 
     .library-next {
-      right: 15px;
+      right: -20%;
+
+      @media (max-width: 1440px) {
+        right: 15%;
+      }
+
+      @media (max-width: 1200px) {
+        right: 10%;
+      }
+
+      @media (max-width: 992px) {
+        right: 5%;
+      }
+
+      @media (max-width: 768px) {
+        right: 2%;
+      }
     }
   }
+}
+
+.home-content-wrap {
+  position: relative;
+  z-index: 2;
+  background-color: #FAF4E8; // matching cream tone
 }

@@ -6,8 +6,10 @@ include 'header.php';
 ?>
 
 <!-- Khung Banner Hero trang Dự án -->
-<section class="banner-hero philosophy-banner position-relative d-flex align-items-center">
-  <div class="banner-bg" style="background-image: url('dist/images/du-an/Hero Banner.jpg') !important;"></div>
+<section class="banner-hero philosophy-banner d-flex align-items-center">
+  <div class="banner-bg">
+    <img src="dist/images/du-an/Hero Banner.jpg" alt="Hero Banner">
+  </div>
   <div class="container-fluid px-md-5 position-relative z-2">
     <div class="row">
       <div class="col-12 col-md-10 col-lg-8">

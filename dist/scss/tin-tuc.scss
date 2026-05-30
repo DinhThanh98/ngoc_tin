@@ -15,17 +15,18 @@
   .banner-wrapper {
     position: relative;
     width: 100%;
-    
+
     .banner-img {
       width: 100%;
       height: auto;
       object-fit: cover;
       display: block;
       max-height: 560px; // Chiều cao tối đa để đảm bảo tính thẩm mỹ
-      
+
       @media (max-width: 991px) {
         max-height: 400px;
       }
+
       @media (max-width: 768px) {
         max-height: 280px;
       }
@@ -45,6 +46,7 @@
       @media (max-width: 991px) {
         height: 120px;
       }
+
       @media (max-width: 768px) {
         height: 70px;
       }
@@ -64,6 +66,7 @@
   @media (max-width: 991px) {
     margin-top: 400px; // Tạo khoảng trống bằng đúng chiều cao banner trên tablet
   }
+
   @media (max-width: 768px) {
     padding: 50px 0;
     margin-top: 280px; // Tạo khoảng trống bằng đúng chiều cao banner trên mobile
@@ -121,26 +124,41 @@
     margin-bottom: 4rem;
 
     .news-section-title {
-      font-family: 'Fahkwang', sans-serif;
-      font-size: 3.6rem;
+      font-family: 'Fahkwang-Regular', sans-serif;
+      font-size: $size-36;
       font-weight: 500;
-      color: #a3603b; // Màu nâu đồng copper đặc trưng
+      color: $color-text-red; // Màu đỏ từ common
       letter-spacing: 0.02em;
       margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 12px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background-color: $color-text-red;
+        border-radius: 1px;
+      }
 
       @media (max-width: 768px) {
-        font-size: 2.8rem;
+        font-size: $size-28;
       }
     }
 
     .news-section-subtitle {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
+      font-family: 'Manrope-Regular', sans-serif;
+      font-size: $size-15; // Cỡ chữ từ common
       line-height: 1.8;
-      color: #4a4a4a;
+      color: $color-text-main; // Màu chữ từ common
       max-width: 760px;
       margin: 0 auto;
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 
@@ -153,6 +171,7 @@
       background: transparent;
       border: none;
       padding: 0;
+      margin-block: 20px;
 
       // Khung bao ngoài hình ảnh của thẻ tin tức
       .news-img-wrapper {
@@ -162,12 +181,19 @@
         background-color: rgba(163, 96, 59, 0.03);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
         transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 100%;
+        height: 200px; // Responsive height
+
+        @media (min-width: 1200px) {
+          width: 323px !important; // Cấu hình width theo yêu cầu
+          height: 220px !important; // Tỷ lệ chuẩn (typo 20px thành 220px)
+        }
 
         .news-img {
           transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
           object-fit: cover;
           width: 100%;
-          height: auto;
+          height: 100%;
           display: block;
         }
       }
@@ -177,10 +203,10 @@
         padding-top: 15px;
 
         .news-category {
-          font-family: 'Inter', sans-serif;
-          font-size: 11px;
-          font-weight: 600;
-          color: #b58a3f; // Tông màu vàng gold sáng
+          font-family: 'Manrope-Regular', sans-serif;
+          font-size: $size-12; // Cỡ chữ từ common
+          font-weight: 500;
+          color: $color-text-yellow; // Màu gold từ common
           letter-spacing: 0.1em;
           text-transform: uppercase;
           display: block;
@@ -188,11 +214,11 @@
         }
 
         .news-title {
-          font-family: 'Inter', sans-serif;
-          font-size: 1.6rem;
-          font-weight: 500;
-          color: #1a1a1a;
-          line-height: 1.5;
+          font-family: 'Fahkwang-Regular', sans-serif;
+          font-size: $size-16; // Thay bằng Fahkwang-Regular và cỡ 16px như hình
+          font-weight: 400; // Regular mỏng thanh lịch đúng thiết kế
+          color: $color-black; // Màu từ common
+          line-height: 1.55;
           margin: 0;
           transition: color 0.3s ease;
           display: -webkit-box;
@@ -201,7 +227,7 @@
           overflow: hidden;
 
           @media (max-width: 991px) {
-            font-size: 1.5rem;
+            font-size: $size-15;
           }
         }
       }
@@ -218,7 +244,7 @@
         }
 
         .news-title {
-          color: #a3603b; // Đổi tiêu đề sang màu nâu đồng
+          color: $color-text-red; // Đổi tiêu đề sang màu đỏ từ common
         }
       }
     }
@@ -229,8 +255,41 @@
     .press-horizontal-card {
       background: transparent;
       border: none;
-      padding: 0;
+      padding: 0 !important;
       height: 100%;
+
+      .row {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        @media (max-width: 767.98px) {
+          flex-wrap: wrap;
+        }
+      }
+
+      .col-4 {
+        width: auto !important;
+        flex: 0 0 auto !important;
+        max-width: none !important;
+
+        @media (max-width: 767.98px) {
+          width: 100% !important;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 15px;
+        }
+      }
+
+      .col-8 {
+        width: auto !important;
+        flex: 1 1 auto !important;
+        max-width: none !important;
+
+        @media (max-width: 767.98px) {
+          width: 100% !important;
+        }
+      }
 
       // Khung hình ảnh thẻ ngang
       .press-img-wrapper {
@@ -240,12 +299,15 @@
         background-color: rgba(163, 96, 59, 0.03);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
         transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        width: 260px !important;
+        height: 144px !important;
+        flex-shrink: 0;
 
         .press-img {
           transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
           object-fit: cover;
           width: 100%;
-          height: auto;
+          height: 100%;
           display: block;
         }
       }
@@ -256,12 +318,13 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
+        padding-left: 15px;
 
         .news-category {
-          font-family: 'Inter', sans-serif;
-          font-size: 11px;
-          font-weight: 600;
-          color: #b58a3f;
+          font-family: 'Manrope-Regular', sans-serif;
+          font-size: $size-12;
+          font-weight: 500;
+          color: $color-text-yellow;
           letter-spacing: 0.1em;
           text-transform: uppercase;
           display: block;
@@ -269,38 +332,38 @@
         }
 
         .press-title {
-          font-family: 'Fahkwang', sans-serif;
-          font-size: 2.2rem;
-          font-weight: 500;
-          color: #a3603b; // Màu nâu đồng copper đặc trưng
+          font-family: 'Fahkwang-Regular', sans-serif;
+          font-size: $size-18;
+          font-weight: 400; // Dạng Regular mỏng
+          color: $color-black; // Chữ màu đen mặc định
           text-transform: lowercase; // Phong cách chữ viết thường độc đáo
           margin: 0 0 6px 0;
-          line-height: 1.3;
+          line-height: 1.35;
           transition: color 0.3s ease;
 
           @media (max-width: 991px) {
-            font-size: 1.8rem;
+            font-size: $size-16;
           }
         }
 
         .press-date {
-          font-family: 'Inter', sans-serif;
-          font-size: 12px;
+          font-family: 'Manrope-Regular', sans-serif;
+          font-size: $size-12;
           color: #888888;
           font-weight: 400;
           margin-bottom: 10px;
         }
 
         .press-excerpt {
-          font-family: 'Inter', sans-serif;
-          font-size: 14px;
-          line-height: 1.7;
-          color: #555555;
+          font-family: 'Manrope-Regular', sans-serif;
+          font-size: $size-13;
+          line-height: 1.6;
+          color: $color-text-main;
           font-weight: 300;
           margin: 0;
           text-align: justify;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
@@ -318,7 +381,7 @@
         }
 
         .press-title {
-          color: #b58a3f; // Chuyển màu tiêu đề sang vàng gold khi hover
+          color: $color-text-red; // Chuyển màu đỏ khi hover
         }
       }
     }

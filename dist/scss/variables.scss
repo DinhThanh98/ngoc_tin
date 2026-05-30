@@ -6,3 +6,101 @@ $color-gold-brand: #bfa054; // Màu vàng gold của logo Ngọc Tín
 // Fonts & Transitions
 $font-family-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 $transition-smooth: all 0.3s ease-in-out;
+
+// Media Screen Breakpoints
+$break-small: 375px;
+$break-mobiles: 425px;
+$break-mobile: 576px;
+$break-tablet: 768px;
+$break-medium: 980px;
+$break-ipad: 1024px;
+$break-large: 1200px;
+$break-big: 1366px;
+$max-tablet: 767.98px;
+
+// Palette
+$color-default: #fbb647;
+$color-white: white;
+$color-black: black;
+$color-background: #f8f8f8;
+$color-button: #0080c6;
+$color-text: #252e5b;
+$color-border: #e7e9ec;
+$color-icon: #fbb647;
+$color-a: #205eda;
+$color-text-red: #964426;
+$color-text-yellow: #EECD6F;
+
+// Font sizes (1rem = 12.50px)
+$size-12: 0.96rem;
+$size-13: 1rem;
+$size-14: 0.9333333333rem;
+$size-15: 1.2rem;
+$size-16: 1.28rem;
+$size-17: 1.36rem;
+$size-18: 1.44rem;
+$size-19: 1.52rem;
+$size-20: 1.6rem;
+$size-22: 1.76rem;
+$size-24: 1.92rem;
+$size-25: 2rem;
+$size-26: 2.08rem;
+$size-27: 2.16rem;
+$size-28: 2.24rem;
+$size-30: 2.4rem;
+$size-32: 2.56rem;
+$size-33: 2.64rem;
+$size-35: 2.8rem;
+$size-36: 2.88rem;
+$size-38: 3.04rem;
+$size-40: 3.2rem;
+$size-42: 3.36rem;
+$size-45: 3.6rem;
+$size-48: 3.84rem;
+$size-50: 4rem;
+$size-60: 5rem;
+$size-65: 5.2rem;
+$size-80: 6.4rem;
+$size-90: 7.2rem;
+
+// Padding & Margin values
+$p0: 0rem;
+$p10: 0.8rem;
+$p12: 1rem;
+$p13: 1.04rem;
+$p14: 1.12rem;
+$p15: 1.2rem;
+$p16: 1.28rem;
+$p17: 1.36rem;
+$p18: 1.44rem;
+$p19: 1.52rem;
+$p20: 1.6rem;
+$p22: 1.76rem;
+$p24: 1.92rem;
+$p25: 2rem;
+$p26: 2.08rem;
+$p28: 2.24rem;
+$p30: 2.4rem;
+$p32: 2.56rem;
+$p33: 2.64rem;
+$p35: 2.8rem;
+$p36: 3rem;
+$p38: 3.04rem;
+$p40: 3.2rem;
+$p43: 3.44rem;
+$p45: 3.6rem;
+$p47: 3.6rem;
+$p48: 3.84rem;
+$p50: 4rem;
+$p55: 4.4rem;
+$p60: 5rem;
+$p64: 5.12rem;
+$p65: 5.2rem;
+$p70: 5.6rem;
+$p75: 6rem;
+$p80: 6.4rem;
+$p90: 7.2rem;
+$p95: 7.6rem;
+$p100: 8rem;
+$p110: 8.8rem;
+$p120: 9.6rem;

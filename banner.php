@@ -1,7 +1,9 @@
 
-<section class="banner-hero position-relative d-flex align-items-center">
+<section class="banner-hero d-flex align-items-center">
   <!-- Background image from physical file -->
-  <div class="banner-bg"></div>
+  <div class="banner-bg">
+    <img src="dist/images/Homepage/banner.png" alt="Hero Banner">
+  </div>
 
   <!-- Main Content Area -->
   <div class="container-fluid px-md-5 position-relative z-2">

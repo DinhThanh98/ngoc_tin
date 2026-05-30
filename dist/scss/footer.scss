@@ -1,11 +1,18 @@
+@import "variables";
+
 // ==========================================
 // Redesigned Brand Footer Styles
 // ==========================================
 .footer-section {
   background-color: #a3603b;
-  background-image: radial-gradient(circle at 15% 85%, rgba(255, 253, 236, 0.06) 0%, rgba(163, 96, 59, 0) 70%), linear-gradient(135deg, #a3603b 0%, #8c4e2d 100%);
+  background-image:
+    linear-gradient(135deg, rgba(177, 91, 50, 0.85) 0%, rgba(139, 65, 30, 0.9) 100%),
+    url('../images/hoa-sen-color.jpg'); // Đường dẫn đến file ảnh hoa sen bạn vừa tải lên
+  background-repeat: no-repeat;
+  background-position: right bottom; // Hoa sen góc phải bên dưới giống trong thiết kế
+  background-size: cover;
   color: #fffdec;
-  padding: 80px 0 40px 0;
+  padding: 40px 0 40px 0;
   position: relative;
   overflow: hidden;
 
@@ -13,15 +20,15 @@
   &::before {
     content: "";
     position: absolute;
-    right: -10%;
-    bottom: -10%;
-    width: 500px;
-    height: 500px;
+    right: -5%;
+    bottom: -5%;
+    width: 600px;
+    height: 600px;
     background-image: url('../images/logo-page.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-    opacity: 0.035;
+    opacity: 0.06;
     pointer-events: none;
     z-index: 1;
     transform: rotate(15deg);
@@ -33,7 +40,7 @@
   }
 
   .footer-logo {
-    max-height: 70px;
+    max-height: 80px;
     width: auto;
     filter: brightness(0) invert(1) sepia(1) saturate(100) hue-rotate(330deg) brightness(0.9); // Gold/Warm cream color filtering
     transition: transform 0.3s ease;
@@ -44,12 +51,13 @@
   }
 
   .footer-company-name {
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-family: 'Raleway-SemiBold', sans-serif;
+    font-size: $size-16;
     letter-spacing: 0.08em;
     font-weight: 600;
-    color: rgba(255, 253, 236, 0.85);
+    color: rgba(255, 253, 236, 0.95);
     margin-top: 15px;
+    line-height: 1.5;
   }
 
   .footer-col {
@@ -66,28 +74,28 @@
 
       .footer-info-label {
         display: block;
-        font-family: 'Inter', sans-serif;
-        font-size: 14px;
+        font-family: 'Raleway-SemiBold', sans-serif;
+        font-size: $size-16;
         font-weight: 600;
-        color: #fffdec;
+        color: rgba(255, 253, 236, 0.95);
         margin-bottom: 6px;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.03em;
       }
 
       .footer-info-value {
-        font-family: 'Inter', sans-serif;
-        font-size: 14px;
-        line-height: 1.7;
-        color: rgba(255, 253, 236, 0.8);
+        font-family: 'Raleway-Regular', sans-serif;
+        font-size: $size-16;
+        line-height: 1.8;
+        color: rgba(255, 253, 236, 0.78);
         margin: 0;
 
         a {
-          color: rgba(255, 253, 236, 0.8);
+          color: $color-text-yellow !important;
           text-decoration: none;
           transition: color 0.3s ease;
 
           &:hover {
-            color: #fffdec;
+            color: #fffdec !important;
             text-decoration: underline;
           }
         }
@@ -97,28 +105,29 @@
 
   .footer-navigation {
     .footer-nav-title {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: #fffdec;
+      font-family: 'Raleway-Bold', sans-serif;
+      font-size: $size-16;
+      font-weight: 700;
+      color: $color-text-yellow;
       margin-bottom: 20px;
       letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .footer-nav-links {
       li {
-        margin-bottom: 12px;
+        margin-bottom: 14px;
 
         a {
-          font-family: 'Inter', sans-serif;
-          font-size: 14px;
-          color: rgba(255, 253, 236, 0.8);
+          font-family: 'Raleway-Medium', sans-serif;
+          font-size: $size-16;
+          color: rgba(255, 253, 236, 0.78);
           text-decoration: none;
           transition: all 0.3s ease;
           display: inline-block;
 
           &:hover {
-            color: #fffdec;
+            color: $color-text-yellow;
             transform: translateX(4px);
           }
         }
@@ -132,17 +141,23 @@
   }
 
   .footer-bottom {
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    color: rgba(255, 253, 236, 0.7);
+    font-family: 'Raleway-Regular', sans-serif;
+    font-size: $size-16;
+    color: #fffdec !important;
+
+    p {
+      color: #fffdec !important;
+      font-size: $size-16;
+    }
 
     a {
-      color: rgba(255, 253, 236, 0.7);
+      color: #fffdec !important;
       text-decoration: none;
       transition: color 0.3s ease;
+      font-size: $size-16;
 
       &:hover {
-        color: #fffdec;
+        color: $color-text-yellow !important;
       }
     }
   }

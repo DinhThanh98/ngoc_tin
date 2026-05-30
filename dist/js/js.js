@@ -114,7 +114,7 @@ $(document).ready(function () {
     // Initialize Library Slider Section
     $('.library-slider').slick({
         centerMode: true,
-        centerPadding: '20%',
+        centerPadding: '25%',
         slidesToShow: 1,
         infinite: true,
         arrows: true,

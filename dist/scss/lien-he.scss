@@ -1,0 +1,280 @@
+// ==========================================================================
+// Trang Liên Hệ (Contact Page Styles)
+// ==========================================================================
+@import "variables";
+
+
+.contact-content-wrap {
+  position: relative;
+  z-index: 2;
+  background-color: #fffdec; // Matching the warm cream background across the site
+  padding: 80px 0;
+
+  .container {
+    max-width: 950px !important;
+    min-width: auto !important;
+  }
+}
+
+// Section 1: Intro Header
+.contact-intro-section {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .contact-title {
+    font-family: 'Fahkwang-Regular', sans-serif;
+    font-size: $size-35;
+    font-weight: 500;
+    color: $color-text-red; // Brand copper-red color
+    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+  }
+
+  .contact-title-line {
+    width: 200px;
+    height: 4px;
+    background-color: $color-text-red;
+    margin: 0 auto 20px;
+    border-radius: 1px;
+  }
+
+  .contact-desc {
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: $size-16;
+    font-weight: 400;
+    color: #000000;
+    max-width: 950px;
+    margin: 0 auto;
+    line-height: 1.85;
+    text-align: center;
+  }
+}
+
+// Section 2: Form & Newsletter
+.contact-form-block {
+  .item-input {
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid rgba(181, 138, 63, 0.2);
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-family: 'Manrope-Regular', sans-serif;
+      font-size: 15px;
+      color: #333333;
+      outline: none;
+      transition: $transition-smooth;
+
+      &::placeholder {
+        color: #999999;
+        font-weight: 300;
+      }
+
+      &:focus {
+        border-color: $color-text-red;
+        box-shadow: 0 0 10px rgba(150, 68, 38, 0.1);
+      }
+    }
+
+    textarea {
+      height: 140px;
+      resize: none;
+    }
+  }
+
+  .btn-submit-contact {
+    background: linear-gradient(135deg, #bfa054 0%, #a38137 100%);
+    color: #ffffff;
+    font-family: 'Raleway-SemiBold', sans-serif;
+    font-size: $size-16;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 12px 45px;
+    border: 1px solid #bfa054;
+    cursor: pointer;
+    transition: $transition-smooth;
+
+    &:hover {
+      background: transparent;
+      color: #a38137;
+      border-color: #a38137;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.newsletter-card {
+  background: linear-gradient(135deg, #b58a3f 0%, #9c732b 100%); // Golden brand background
+  border-radius: 24px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 35px rgba(181, 138, 63, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 991px) {
+    margin-top: 40px;
+  }
+
+  .newsletter-title {
+    font-family: 'Fahkwang-Regular', sans-serif;
+    font-size: $size-24;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 0.02em;
+  }
+
+  .newsletter-desc {
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  .newsletter-form {
+    .item-input {
+      margin-bottom: 18px;
+
+      input {
+        width: 100%;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        padding: 14px 24px;
+        font-family: 'Manrope-Regular', sans-serif;
+        font-size: 14px;
+        color: #333333;
+        outline: none;
+
+        &::placeholder {
+          color: #999999;
+        }
+      }
+    }
+
+    .btn-newsletter {
+      width: 100%;
+      background-color: #7d3b20; // Dark copper red
+      color: #ffffff;
+      font-family: 'Raleway-SemiBold', sans-serif;
+      font-size: $size-16;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      transition: $transition-smooth;
+
+      &:hover {
+        background-color: #5f2c17;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Section 3: Contact Info Cards
+.contact-info-section {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.contact-info-card {
+  background: linear-gradient(135deg, #b58a3f 0%, #9c732b 100%); // Golden/brown matching the design
+  border-radius: 20px;
+  padding: 35px 30px;
+  height: 100%;
+  color: #000000; // sửa màu chữ thành black
+  box-shadow: 0 15px 35px rgba(191, 160, 84, 0.12);
+  transition: $transition-smooth;
+
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(191, 160, 84, 0.2);
+  }
+
+  .info-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .info-card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      font-size: 18px;
+      color: $color-text-red; // sửa các icon thành màu đỏ trong common
+    }
+
+    .info-card-title {
+      font-family: 'Fahkwang-Regular', sans-serif;
+      font-size: $size-20;
+      font-weight: 500;
+      color: #000000; // sửa màu chữ thành black
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .info-card-value {
+    font-family: 'Raleway-Bold', sans-serif;
+    font-size: $size-22;
+    font-weight: 700;
+    color: #000000; // sửa màu chữ thành black
+    margin-bottom: 12px;
+    display: block;
+    letter-spacing: 0.02em;
+    word-break: break-all;
+
+    a {
+      color: #000000 !important; // sửa màu chữ thành black
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .info-card-desc {
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000; // sửa màu chữ thành black
+    margin: 0;
+    font-weight: 300;
+    text-align: justify;
+  }
+}
+
+// Section 4: Map Section
+.contact-map-section {
+  margin-bottom: 40px;
+
+  .map-container {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(181, 138, 63, 0.15);
+    line-height: 0;
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+  }
+}

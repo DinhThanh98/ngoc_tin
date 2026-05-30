@@ -4,42 +4,43 @@
 
 // Ghi đè Banner Triết lý (Banner tĩnh thiết lập riêng trong triet-ly.php)
 .philosophy-banner {
-  .banner-bg {
-    background-image: url('../images/triet-ly-phat-trien/Hero Banner.jpg') !important;
-    background-position: center right;
-  }
+  height: 660px !important;
+  min-height: 660px !important;
+  max-height: 660px !important;
 
   .banner-tagline {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 2.2rem;
+    font-family: 'Fahkwang-Regular', sans-serif !important;
+    font-weight: 400 !important;
+    color: #ffffff !important;
+    font-size: 35px !important;
     letter-spacing: 0.02em;
     text-transform: none;
     margin-bottom: 8px;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 
     @media (max-width: 991px) {
-      font-size: 1.8rem;
+      font-size: 28px !important;
     }
+
     @media (max-width: 768px) {
-      font-size: 1.6rem;
+      font-size: 22px !important;
     }
   }
 
   .banner-title {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 300 !important;
+    font-family: 'Fahkwang-Regular', sans-serif !important;
+    font-weight: 400 !important;
     color: #ffffff !important;
-    font-size: 6.4rem !important;
+    font-size: $p64 !important;
     letter-spacing: -0.02em !important;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
 
     @media (max-width: 991px) {
-      font-size: 4.8rem !important;
+      font-size: 48px !important;
     }
+
     @media (max-width: 768px) {
-      font-size: 3.6rem !important;
+      font-size: 36px !important;
     }
   }
 }
@@ -97,16 +98,30 @@
     z-index: 1;
   }
 
+  .row.g-5 {
+    --bs-gutter-x: 50px;
+
+    @media (max-width: 991px) {
+      --bs-gutter-y: 30px;
+    }
+  }
+
   // Khung chứa hình ảnh cột bên trái
   .intro-img-wrapper {
+    height: 535px;
     border-radius: 28px !important;
     box-shadow: 0 20px 50px rgba(163, 96, 59, 0.12) !important;
     border: 1px solid rgba(163, 96, 59, 0.1);
     transform: perspective(1000px) rotateY(2deg);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
+    @media (max-width: 991px) {
+      height: 335px;
+    }
+
     .intro-img {
       transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      height: 100%;
     }
 
     &:hover {
@@ -121,11 +136,13 @@
 
   // Nội dung cột bên phải
   .intro-content {
+    padding-left: 0 !important;
+
     .intro-title {
-      font-family: 'Fahkwang', sans-serif;
-      font-size: 3.6rem;
+      font-family: 'Fahkwang-Regular', sans-serif;
+      font-size: $size-35;
       font-weight: 500;
-      color: #a3603b; // Màu nâu đồng chủ đạo
+      color: $color-text-red; // Màu chữ theo biến trong common
       letter-spacing: 0.02em;
 
       @media (max-width: 768px) {
@@ -134,21 +151,21 @@
     }
 
     .intro-title-line {
-      width: 60px;
-      height: 2px;
-      background-color: #a3603b;
-      margin: 15px auto 0;
+      width: 200px;
+      height: 4px;
+      background-color: $color-text-red;
       border-radius: 1px;
+      margin: 0px auto 0;
     }
 
     .intro-text-wrapper {
       margin-top: 35px;
 
       .intro-p {
-        font-family: 'Inter', sans-serif;
-        font-size: 15px;
+        font-family: 'Manrope-Regular', sans-serif;
+        font-size: $size-16;
         line-height: 1.85;
-        color: #4a4a4a; // Màu xám than dễ đọc
+        color: #000000;
         text-align: justify;
         font-weight: 300;
       }
@@ -194,6 +211,7 @@
     box-shadow: 0 30px 60px rgba(163, 96, 59, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1;
+    padding: 40px 30px 24px !important; // padding của div này là 40px 30px 24px
 
     // Họa tiết hoa sen chìm nhẹ ở góc phải dưới bên trong card
     &::after {
@@ -215,16 +233,29 @@
     .row {
       position: relative;
       z-index: 1;
+      align-items: stretch !important; // stretch columns to match height
+      --bs-gutter-x: 55px; // khoảng cách giữa text và ảnh cách nhau 55px
+
+      @media (max-width: 991px) {
+        --bs-gutter-y: 30px;
+      }
     }
 
     // Khung chứa hình ảnh cột bên trái card
     .values-img-wrapper {
+      height: 455px;
       border-radius: 20px !important;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.15);
       overflow: hidden;
 
+      @media (max-width: 767px) {
+        height: 300px;
+      }
+
       .values-img {
+        height: 100%;
+        object-fit: cover; // fill height and crop beautifully without distorting
         transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
 
@@ -235,23 +266,23 @@
 
     // Danh sách các giá trị cột bên phải card
     .values-content {
+      padding-left: 25px !important;
+
       .values-card-subtitle {
-        font-family: 'Fahkwang', sans-serif;
-        font-size: 2.2rem;
+        font-family: 'Fahkwang-Regular', sans-serif;
+        font-size: $size-32; // "Giá trị cốt lõi" size-32
         font-weight: 500;
-        color: #e5c184; // Màu vàng gold sang trọng cho tiêu đề phụ
+        color: $color-text-yellow; // color từ biến
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        border-left: 3px solid #e5c184;
-        padding-left: 15px;
         line-height: 1;
       }
 
       .values-list {
         .value-item {
-          font-family: 'Inter', sans-serif;
-          font-size: 2.2rem;
-          font-weight: 600;
+          font-family: 'Fahkwang-Regular', sans-serif; // font chữ fahkwang regular
+          font-size: $size-35; // UY TÍN ... CỐNG HIẾN size-35
+          font-weight: 400;
           color: #ffffff;
           letter-spacing: 0.08em;
           padding: 8px 0;
@@ -260,11 +291,17 @@
           display: inline-block;
 
           &:hover {
-            color: #e5c184;
+            color: $color-text-yellow; // hover color từ biến
             transform: translateX(10px);
           }
         }
       }
     }
   }
+}
+
+.philosophy-content-wrap {
+  position: relative;
+  z-index: 2;
+  background-color: #fffdec; // solid warm cream background matching the intro section
 }

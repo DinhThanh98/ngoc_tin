@@ -9,9 +9,11 @@ include 'header.php';
 include 'banner.php';
 ?>
 
+<div class="home-content-wrap">
+
 <!-- Giới Thiệu Section -->
-<section class="about-section py-5">
-    <div class="container py-4">
+<section class="about-section">
+    <div class="container">
         <!-- Section Title -->
         <div class="about-header text-center mb-5">
             <h2 class="about-section-title">Giới Thiệu</h2>
@@ -19,7 +21,7 @@ include 'banner.php';
         </div>
 
         <!-- Main Card Container -->
-        <div class="about-card p-4 p-md-5">
+        <div class="about-card">
             <h3 class="about-card-title mb-4">Ngọc Tín Holdings</h3>
             
             <div class="about-card-text mb-4">
@@ -54,14 +56,14 @@ include 'banner.php';
 <section class="activities-section py-5">
     <div class="container py-4">
         <!-- Section Header -->
-        <div class="activities-header text-center mb-5">
+        <div class="activities-header text-center">
             <h5 class="activities-subtitle">LĨNH VỰC HOẠT ĐỘNG</h5>
-            <div class="activities-title-line mb-3"></div>
+            <div class="activities-title-line"></div>
             <h2 class="activities-title">Tấm lá xanh bao bọc giá trị sống</h2>
         </div>
 
         <!-- Description Paragraphs -->
-        <div class="activities-desc mx-auto mb-5">
+        <div class="activities-desc">
             <p>Sự tin cậy của khách hàng chính là nguồn nhựa sống dồi dào để Ngọc Tín Holdings không ngừng mở rộng "tán lá" dịch vụ, che chở và kiến tạo nên những giá trị sống đích thực. Chúng tôi định vị sự phát triển đa dạng từ hoạt động Đấu thầu, Hợp tác đầu tư đến Trực tiếp triển khai các dự án bất động sản phân khúc cao cấp.</p>
             <p>Tại Ngọc Tín Holdings, mỗi lĩnh vực hoạt động đều là một lời cam kết khắc sâu: Từ những viên gạch vững chãi, chúng tôi chăm chút bằng sự tỉ mỉ và cái Tâm trong từng chi tiết kiến trúc, đảm bảo chất lượng thi công đạt tiêu chuẩn cao nhất – đến những thương phố sinh động, chúng tôi biến các dãy nhà liền kề, Shophouse thành những cộng đồng cư dân sầm uất, nơi chất lượng cuộc sống được cải thiện và nâng tầm mỗi ngày.</p>
             <p>Lấy chữ Tín làm kim chỉ nam xuyên suốt – vừa là gốc rễ sức mạnh, vừa là mục tiêu tối thượng – Ngọc Tín Holdings nỗ lực vươn mình để xây dựng một Hệ sinh thái chăm sóc toàn diện. Chúng tôi khao khát mang đến sự bảo trợ bền vững cho cộng đồng thông qua việc mở rộng sang các lĩnh vực Y tế, Giáo dục, Chăm sóc sức khỏe và Đời sống tinh thần. Đó là sự thấu hiểu sâu sắc và chăm chút đến từng đối tượng: từ nụ cười của trẻ thơ, sự năng động của thanh niên, đến phút giây an dưỡng tự tại của người tuổi già. Mỗi sản phẩm của Ngọc Tín không chỉ có "diện mạo" đẳng cấp mà còn mang "chiều sâu" nhân văn, để lại dấu ấn bền vững như ánh trăng soi sáng, góp phần thúc đẩy một xã hội tốt đẹp, an yên và vĩnh cửu.</p>
@@ -70,7 +72,7 @@ include 'banner.php';
         <!-- Activities Grid -->
         <div class="row g-4 activities-grid">
             <!-- Vận hành -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 p-2">
                 <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
                     <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Vận%20hành.jpg" alt="Vận hành" class="activity-img">
                     <div class="activity-overlay"></div>
@@ -79,7 +81,7 @@ include 'banner.php';
             </div>
 
             <!-- Phát triển dự án -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 p-2">
                 <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
                     <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Phát%20triển%20dự%20án.jpg" alt="Phát triển dự án" class="activity-img">
                     <div class="activity-overlay"></div>
@@ -88,7 +90,7 @@ include 'banner.php';
             </div>
 
             <!-- Hợp tác đầu tư -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 p-2">
                 <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
                     <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Hợp%20tác%20đầu%20tư.jpg" alt="Hợp tác đầu tư" class="activity-img">
                     <div class="activity-overlay"></div>
@@ -97,7 +99,7 @@ include 'banner.php';
             </div>
 
             <!-- Đấu thầu -->
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 p-2">
                 <a href="#" class="activity-card d-block position-relative overflow-hidden rounded-4">
                     <img src="dist/images/Homepage/Lĩnh%20vực%20-%20Đấu%20thầu.jpg" alt="Đấu thầu" class="activity-img">
                     <div class="activity-overlay"></div>
@@ -109,12 +111,12 @@ include 'banner.php';
 </section>
 
 <!-- Dự Án Tiêu Biểu Section -->
-<section class="projects-section py-5">
+<section class="projects-section">
     <div class="container py-4">
         <!-- Section Header -->
         <div class="projects-header text-center mb-5">
             <h5 class="projects-subtitle">DỰ ÁN TIÊU BIỂU</h5>
-            <div class="projects-title-line mb-3"></div>
+            <div class="projects-title-line"></div>
             <h2 class="projects-title">Những đường gân kết nối niềm tin</h2>
         </div>
 
@@ -177,9 +179,26 @@ include 'banner.php';
             <p>Lá sen chỉ có thể vươn cao khi có sự giao thoa, cộng hưởng cùng nắng gió và nguồn mạch đất trời. Tại Ngọc Tín Holdings, chúng tôi coi trọng mỗi đối tác là một người bạn đồng hành tri kỷ trên hành trình lan tỏa giá trị sống. Mối quan hệ này được xây dựng từ Lòng Biết ơn sâu sắc khi chúng tôi thấu hiểu rằng, nếu thiếu đi chữ Tín và sự tin tưởng từ các đối tác, sẽ không có Ngọc Tín Holdings của ngày hôm nay. Đi cùng với sự Cẩn trọng tuyệt đối, chữ Tín là sợi dây liên kết vô hình nhưng bền chặt, dẫn dắt chúng tôi phối hợp chặt chẽ với các đơn vị thiết kế và nhà thầu uy tín. Sự kỹ lưỡng trong từng quy trình triển khai chính là cách chúng tôi bảo vệ cam kết về chất lượng và danh dự của cả hai bên.</p>
         </div>
 
-        <!-- Partners Image -->
-        <div class="partners-image-container text-center">
-            <img src="dist/images/Homepage/partner.png" alt="Đối tác chiến lược" class="img-fluid partners-img">
+        <!-- Partners Grid -->
+        <div class="row g-4 justify-content-center partners-grid">
+            <!-- SS Land -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="partner-card">
+                    <img src="dist/images/SS Land.png" alt="SS Land" class="partner-logo img-fluid">
+                </div>
+            </div>
+            <!-- HD Mon -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="partner-card">
+                    <img src="dist/images/HD Mon.png" alt="HD Mon" class="partner-logo img-fluid">
+                </div>
+            </div>
+            <!-- Villa -->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="partner-card">
+                    <img src="dist/images/Villa.png" alt="Villa" class="partner-logo img-fluid">
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -199,9 +218,9 @@ include 'banner.php';
 
         <!-- Content Rows -->
         <!-- Row 1: Text Left, Image Right -->
-        <div class="row align-items-center mb-5 legacy-row">
+        <div class="row align-items-center legacy-row">
             <div class="col-12 col-lg-6 order-2 order-lg-1">
-                <div class="legacy-content pe-lg-4">
+                <div class="legacy-content">
                     <h3 class="legacy-item-title mb-3">DI SẢN BỀN VỮNG: GIÁ TRỊ THỰC – NIỀM TIN VĨNH CỬU</h3>
                     <p class="legacy-item-text">
                         Tại Ngọc Tín Holdings, mỗi không gian sống không chỉ là một công trình, mà là một "di sản sống". Chúng tôi không xây dựng những hào nhoáng xa vời, mà tập trung lưu giữ những chuẩn mực đạo đức và chất lượng vững chãi cho thế hệ mai sau. Chúng tôi ghi dấu ấn bằng sự tử tế và giá trị thực qua chất lượng hữu hình: Không dừng lại ở lời nói, chất lượng tại Ngọc Tín là thứ khách hàng có thể kiểm chứng trực tiếp. Và khi chất lượng được kiểm chứng bằng sự thật, mỗi ngôi nhà sẽ trở thành một tài sản bền vững, nơi dòng chảy thịnh vượng và niềm tin sắt đá được tiếp nối vẹn nguyên qua nhiều thế hệ. Bằng cái Tâm chính trực và chữ Tín xuyên suốt, chúng tôi tận tâm xây đắp những nền tảng vững chắc nhất, để mỗi chủ nhân của Ngọc Tín Holdings luôn tự hào về sự lựa chọn đúng đắn của mình hôm nay và mãi về sau.
@@ -223,7 +242,7 @@ include 'banner.php';
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="legacy-content ps-lg-4">
+                <div class="legacy-content">
                     <h3 class="legacy-item-title mb-3">HẠNH PHÚC CỘNG ĐỒNG: ĐÓA SEN TỬ TẾ – NGÁT HƯƠNG PHỤNG SỰ</h3>
                     <p class="legacy-item-text">
                         Đóa sen mang tên Ngọc Tín Holdings chỉ thực sự rực rỡ khi hương thơm của sự Tử tế và Chân thành chạm đến trái tim của cộng đồng. Chúng tôi tin rằng, hạnh phúc thật sự là khi giá trị của doanh nghiệp hòa quyện cùng sự phát triển của xã hội. Kiên định với triết lý "Tin Từ Tâm Ngọc", Ngọc Tín Holdings cam kết mỗi dự án đi qua đều để lại những giá trị tích cực, góp phần thúc đẩy kinh tế và dựng xây một cộng đồng nhân văn, tử tế hơn mỗi ngày.
@@ -237,11 +256,10 @@ include 'banner.php';
 <!-- Thư Viện / Hình Ảnh / Video Section -->
 <section class="library-section py-5">
     <div class="container-fluid py-4 px-0">
-        <!-- Section Header -->
         <div class="library-header text-center mb-5">
             <h5 class="library-subtitle">THƯ VIỆN</h5>
-            <div class="library-title-line mb-3"></div>
-            <h2 class="library-title">Những khoảnh khắc kiến tạo di sản</h2>
+            <h2 class="library-title">Thư viện/Hình ảnh/Video</h2>
+            <div class="library-title-line"></div>
         </div>
 
         <!-- Slick Slider container -->
@@ -273,3 +291,5 @@ include 'banner.php';
 <?php
 include 'footer.php';
 ?>
+
+</div>
